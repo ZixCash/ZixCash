@@ -16,12 +16,12 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Akula"
-            VALUE "FileDescription",    "akulad (Akula node with a JSON-RPC server)"
+            VALUE "CompanyName",        "AKL"
+            VALUE "FileDescription",    "akulad (OSS daemon/client for AKL)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "akulad"
             VALUE "LegalCopyright",     COPYRIGHT_STR
-            VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
+            VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "akulad.exe"
             VALUE "ProductName",        "akulad"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR

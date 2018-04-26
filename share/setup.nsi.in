@@ -7,7 +7,7 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION @CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@
 !define COMPANY "Akula Core project"
-!define URL https://www.akula.org/
+!define URL http://bit.akulas/
 
 # MUI Symbol Definitions
 !define MUI_ICON "@abs_top_srcdir@/share/pixmaps/bitcoin.ico"
@@ -48,11 +48,11 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile @abs_top_srcdir@/akulacore-${VERSION}-win@WINDOWS_BITS@-setup.exe
+OutFile @abs_top_srcdir@/akula-${VERSION}-win@WINDOWS_BITS@-setup.exe
 !if "@WINDOWS_BITS@" == "64"
-InstallDir $PROGRAMFILES64\AkulaCore
+InstallDir $PROGRAMFILES64\AKL
 !else
-InstallDir $PROGRAMFILES\AkulaCore
+InstallDir $PROGRAMFILES\AKL
 !endif
 CRCCheck on
 XPStyle on
@@ -106,10 +106,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "akulacore" "URL Protocol" ""
-    WriteRegStr HKCR "akulacore" "" "URL:Akula"
-    WriteRegStr HKCR "akulacore\DefaultIcon" "" $INSTDIR\akula-qt.exe
-    WriteRegStr HKCR "akulacore\shell\open\command" "" '"$INSTDIR\akula-qt.exe" "%1"'
+    WriteRegStr HKCR "akula" "URL Protocol" ""
+    WriteRegStr HKCR "akula" "" "URL:AKL"
+    WriteRegStr HKCR "akula\DefaultIcon" "" $INSTDIR\akula-qt.exe
+    WriteRegStr HKCR "akula\shell\open\command" "" '"$INSTDIR\akula-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -139,7 +139,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Akula.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\AKL.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -147,7 +147,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "akulacore"
+    DeleteRegKey HKCR "akula"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
   <key>LSMinimumSystemVersion</key>
-  <string>10.7.0</string>
+  <string>10.8.0</string>
 
   <key>LSArchitecturePriority</key>
   <array>
@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Akula Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash and PIVX Core Developers, 2018-@COPYRIGHT_YEAR@ The Akula Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -30,15 +30,9 @@
 
   <key>CFBundleExecutable</key>
   <string>Akula-Qt</string>
-  
-  <key>CFBundleName</key>
-  <string>Akula-Qt</string>
-
-  <key>LSHasLocalizedDisplayName</key>
-  <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.akula.Akula-Qt</string>
+  <string>io.akula.Akula-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.akula.AkulaPayment</string>
+      <string>io.akula.AkulaPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>akula</string>
@@ -58,7 +52,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.akula.paymentrequest</string>
+      <string>io.akula.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Akula payment request</string>
       <key>UTTypeConformsTo</key>
@@ -71,7 +65,7 @@
         <string>application/x-akula-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>akulacoinmentrequest</string>
+          <string>akulapaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.akula.paymentrequest</string>
+        <string>io.akula.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>
@@ -99,7 +93,7 @@
 
   <key>LSAppNapIsDisabled</key>
     <string>True</string>
-  
+
   <key>LSApplicationCategoryType</key>
     <string>public.app-category.finance</string>
 </dict>

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Akula
-Comment=Akula P2P Cryptocurrency
+Name=AKL
+Comment=AKL P2P Cryptocurrency
 Exec=akula-qt %u
 Terminal=false
 Type=Application

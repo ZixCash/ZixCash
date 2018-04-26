@@ -1,15 +1,19 @@
 [Unit]
-Description=Akula's distributed currency daemon
+Description=AKL's distributed currency daemon
 After=network.target
 
 [Service]
-User=akulacore
-Group=akulacore
+User=akula
+Group=akula
 
 Type=forking
 PIDFile=/var/lib/akulad/akulad.pid
+
 ExecStart=/usr/bin/akulad -daemon -pid=/var/lib/akulad/akulad.pid \
--conf=/etc/akulacore/akula.conf -datadir=/var/lib/akulad -disablewallet
+          -conf=/etc/akula/akula.conf -datadir=/var/lib/akulad
+
+ExecStop=-/usr/bin/akula-cli -conf=/etc/akula/akula.conf \
+         -datadir=/var/lib/akulad stop
 
 Restart=always
 PrivateTmp=true

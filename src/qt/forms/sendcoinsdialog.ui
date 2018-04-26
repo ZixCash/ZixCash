@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>850</width>
-    <height>526</height>
+    <height>610</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -528,7 +528,7 @@
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayoutCoinControl4" stretch="0,0,0">
+         <layout class="QHBoxLayout" name="horizontalLayoutCoinControl4" stretch="0,0,0,0,0,0,0">
           <property name="spacing">
            <number>12</number>
           </property>
@@ -561,6 +561,40 @@
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="splitBlockCheckBox">
+            <property name="text">
+             <string>Split UTXO</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="splitBlockLineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>50</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="placeholderText">
+             <string># of outputs</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelBlockSizeText">
+            <property name="text">
+             <string>UTXO Size:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelBlockSize">
+            <property name="text">
+             <string>0 AKL</string>
             </property>
            </widget>
           </item>
@@ -617,7 +651,7 @@
         <x>0</x>
         <y>0</y>
         <width>830</width>
-        <height>69</height>
+        <height>95</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -771,6 +805,16 @@
                 </property>
                </widget>
               </item>
+              <item>
+               <widget class="QPushButton" name="buttonMinimizeFee">
+                <property name="toolTip">
+                 <string>collapse fee-settings</string>
+                </property>
+                <property name="text">
+                 <string>Minimize</string>
+                </property>
+               </widget>
+              </item>
              </layout>
             </item>
             <item>
@@ -800,16 +844,6 @@
              </size>
             </property>
            </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="buttonMinimizeFee">
-            <property name="toolTip">
-             <string>collapse fee-settings</string>
-            </property>
-            <property name="text">
-             <string>Hide</string>
-            </property>
-           </widget>
           </item>
          </layout>
         </item>
@@ -845,7 +879,7 @@
              <property name="verticalSpacing">
               <number>4</number>
              </property>
-             <item row="1" column="1">
+             <item row="2" column="4">
               <layout class="QVBoxLayout" name="verticalLayoutFee8">
                <property name="spacing">
                 <number>6</number>
@@ -855,7 +889,7 @@
                  <item>
                   <widget class="QRadioButton" name="radioCustomPerKilobyte">
                    <property name="toolTip">
-                    <string>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 duffs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                    <string>If the custom fee is set to 1000 uAKLs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uAKLs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uAKLs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
                    </property>
                    <property name="text">
                     <string>per kilobyte</string>
@@ -871,7 +905,7 @@
                  <item>
                   <widget class="QRadioButton" name="radioCustomAtLeast">
                    <property name="toolTip">
-                    <string>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 duffs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                    <string>If the custom fee is set to 1000 uAKLs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uAKLs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uAKLs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
                    </property>
                    <property name="text">
                     <string>total at least</string>
@@ -904,7 +938,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBoxMinimumFee">
                    <property name="toolTip">
-                    <string>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for akula transactions than the network can process.</string>
+                    <string>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for AKL transactions than the network can process.</string>
                    </property>
                    <property name="text">
                     <string/>
@@ -917,7 +951,7 @@
                     <bool>true</bool>
                    </property>
                    <property name="toolTip">
-                    <string>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for akula transactions than the network can process.</string>
+                    <string>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for AKL transactions than the network can process.</string>
                    </property>
                    <property name="text">
                     <string>(read the tooltip)</string>
@@ -944,21 +978,8 @@
                </item>
               </layout>
              </item>
-             <item row="0" column="0">
-              <layout class="QVBoxLayout" name="verticalLayoutFee4" stretch="0,1">
-               <item>
-                <widget class="QRadioButton" name="radioSmartFee">
-                 <property name="text">
-                  <string>Recommended:</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">groupFee</string>
-                 </attribute>
-                </widget>
-               </item>
+             <item row="1" column="0">
+              <layout class="QVBoxLayout" name="verticalLayoutFee4" stretch="1">
                <item>
                 <spacer name="verticalSpacer_2">
                  <property name="orientation">
@@ -974,12 +995,12 @@
                </item>
               </layout>
              </item>
-             <item row="1" column="0">
+             <item row="2" column="0">
               <layout class="QVBoxLayout" name="verticalLayoutFee9" stretch="0,1">
                <item>
                 <widget class="QRadioButton" name="radioCustomFee">
                  <property name="text">
-                  <string>Custom:</string>
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">groupFee</string>
@@ -1001,7 +1022,7 @@
                </item>
               </layout>
              </item>
-             <item row="0" column="1">
+             <item row="1" column="4">
               <layout class="QVBoxLayout" name="verticalLayoutFee3" stretch="0,0,1">
                <property name="spacing">
                 <number>6</number>
@@ -1011,33 +1032,6 @@
                </property>
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayoutFee12">
-                 <item>
-                  <widget class="QLabel" name="labelSmartFee">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="margin">
-                    <number>2</number>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="labelFeeEstimation">
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="labelSmartFee2">
-                   <property name="text">
-                    <string>(Smart fee not initialized yet. This usually takes a few blocks...)</string>
-                   </property>
-                   <property name="margin">
-                    <number>2</number>
-                   </property>
-                  </widget>
-                 </item>
                  <item>
                   <spacer name="horizontalSpacer_5">
                    <property name="orientation">
@@ -1165,6 +1159,69 @@
                </item>
               </layout>
              </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="labelSmartFee_2">
+               <property name="text">
+                <string>Recommended</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QRadioButton" name="radioSmartFee">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">groupFee</string>
+               </attribute>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="labelCustomFee">
+               <property name="text">
+                <string>Custom:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="labelSmartFee">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="margin">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="labelFeeEstimation">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="labelSmartFee2">
+               <property name="text">
+                <string>(Smart fee not initialized yet. This usually takes a few blocks...)</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignHCenter</set>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="margin">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
             </layout>
            </item>
            <item>
@@ -1257,6 +1314,10 @@
        <property name="text">
         <string>S&amp;end</string>
        </property>
+       <property name="icon">
+        <iconset resource="../akula.qrc">
+         <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -1279,6 +1340,10 @@
        <property name="text">
         <string>Clear &amp;All</string>
        </property>
+       <property name="icon">
+        <iconset resource="../akula.qrc">
+         <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -1291,6 +1356,10 @@
        </property>
        <property name="text">
         <string>Add &amp;Recipient</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../akula.qrc">
+         <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -1316,7 +1385,7 @@
         <number>3</number>
        </property>
        <item>
-        <widget class="QCheckBox" name="checkUsePrivateSend">
+        <widget class="QCheckBox" name="checkUseDarksend">
          <property name="minimumSize">
           <size>
            <width>95</width>
@@ -1324,7 +1393,7 @@
           </size>
          </property>
          <property name="text">
-          <string>PrivateSend</string>
+          <string>Darksend</string>
          </property>
          <property name="checked">
           <bool>false</bool>
@@ -1332,7 +1401,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkUseInstantSend">
+        <widget class="QCheckBox" name="checkInstantX">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -1343,7 +1412,7 @@
           </size>
          </property>
          <property name="text">
-          <string>InstantSend</string>
+          <string>InstantX</string>
          </property>
         </widget>
        </item>
@@ -1397,7 +1466,7 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="groupCustomFee"/>
   <buttongroup name="groupFee"/>
+  <buttongroup name="groupCustomFee"/>
  </buttongroups>
 </ui>

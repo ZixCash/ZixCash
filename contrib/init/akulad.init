@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  akulad The Akula Core server.
+#  akulad The AKL core server.
 #
 #
 # chkconfig: 345 80 20
@@ -23,14 +23,14 @@ prog=akulad
 lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/akulad}
 
 # akulad defaults to /usr/bin/akulad, override with BITCOIND_BIN
-akulad=${BITCOIND_BIN-/usr/bin/akulad}
+bitcoind=${BITCOIND_BIN-/usr/bin/akulad}
 
 # akulad opts default to -disablewallet, override with BITCOIND_OPTS
-akulad_opts=${BITCOIND_OPTS--disablewallet}
+bitcoind_opts=${BITCOIND_OPTS}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $akulad $akulad_opts
+    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

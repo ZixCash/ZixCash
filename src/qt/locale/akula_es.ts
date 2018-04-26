@@ -1,4 +1,4 @@
-<TS language="es" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
@@ -62,12 +62,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your Akula addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Akula para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar akulas.</translation>
+        <source>These are your AKL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones AKL para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar akulas.</translation>
     </message>
     <message>
-        <source>These are your Akula addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones de Akula para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your AKL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones de AKL para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,7 +136,7 @@
         <translation>Sirve  para desactivar sendmoney trivial cuando una cuenta del SO se ve comprometida . No ofrece seguridad real.</translation>
     </message>
     <message>
-        <source>For anonymization only</source>
+        <source>For anonymization and staking only</source>
         <translation>Solo para anonimizar</translation>
     </message>
     <message>
@@ -176,8 +176,8 @@
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AKL&lt;/b&gt;!</source>
-        <translation>Advertencia: Si cifra la cartera y pierde su contraseña, ¡&lt;b&gt;PERDERÁ TODOS SUS AKL&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DNET&lt;/b&gt;!</source>
+        <translation>Advertencia: Si cifra la cartera y pierde su contraseña, ¡&lt;b&gt;PERDERÁ TODOS SUS DNET&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <source>Akula will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your akulas from being stolen by malware infecting your computer.</source>
-        <translation>Akula se cerrará ahora para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus akulas del robo por un malware que infecte su sistema.</translation>
+        <source>AKL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your akulas from being stolen by malware infecting your computer.</source>
+        <translation>AKL se cerrará ahora para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus akulas del robo por un malware que infecte su sistema.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -255,8 +255,8 @@
         <translation>&amp;Enviar</translation>
     </message>
     <message>
-        <source>Send coins to a Akula address</source>
-        <translation>Enviar cuantía a una dirección Akula</translation>
+        <source>Send coins to a AKL address</source>
+        <translation>Enviar cuantía a una dirección AKL</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -264,7 +264,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and akula: URIs)</source>
-        <translation>Solicitar pagos (genera códigos QR y URIs de Akula)</translation>
+        <translation>Solicitar pagos (genera códigos QR y URIs de AKL)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -303,8 +303,8 @@
         <translation>&amp;Opciones...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Akula</source>
-        <translation>Modificar las opciones de configuración de Akula</translation>
+        <source>Modify configuration options for AKL</source>
+        <translation>Modificar las opciones de configuración de AKL</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,16 +355,16 @@
         <translation>Firmar &amp;mensaje...</translation>
     </message>
     <message>
-        <source>Sign messages with your Akula addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Akula para demostrar su posesión</translation>
+        <source>Sign messages with your AKL addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones AKL para demostrar su posesión</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verificar el mensaje...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Akula addresses</source>
-        <translation>Verificar mensajes para comprobar que fueron firmados con la dirección Akula indicada</translation>
+        <source>Verify messages to ensure they were signed with specified AKL addresses</source>
+        <translation>Verificar mensajes para comprobar que fueron firmados con la dirección AKL indicada</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -463,7 +463,7 @@
         <translation>Sincronizando datos adicionales: %p%</translation>
     </message>
     <message>
-        <source>Show the Akula Core help message to get a list with possible Akula command-line options</source>
+        <source>Show the Akula Core help message to get a list with possible AKL command-line options</source>
         <translation>Mostrar el mensaje de ayuda de Akula Core para obtener una lista con las posibles opciones de la consola de comandos</translation>
     </message>
     <message>
@@ -487,8 +487,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Akula network</source>
-        <translation><numerusform>%n conexion(es) activa a la red Akula</numerusform><numerusform>%n conexion(es) activas a la red Akula</numerusform></translation>
+        <source>%n active connection(s) to AKL network</source>
+        <translation><numerusform>%n conexion(es) activa a la red AKL</numerusform><numerusform>%n conexion(es) activas a la red AKL</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -594,8 +594,8 @@ Dirección: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <source>Total: %1 (DS compatible: %2 / Enabled: %3)</source>
-        <translation>Total: %1 (Compatibles con DS: %2 / Habilitados: %3)</translation>
+        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
+        <translation>Total: %1 (Compatibles con OBF: %2 / Habilitados: %3)</translation>
     </message>
     <message>
         <source>Network Alert</source>
@@ -626,7 +626,7 @@ Dirección: %4
     </message>
     <message>
         <source>Coin Selection</source>
-        <translation>Selección de Akula</translation>
+        <translation>Selección de AKL</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -669,8 +669,8 @@ Dirección: %4
         <translation>Recibido con la dirección</translation>
     </message>
     <message>
-        <source>DS Rounds</source>
-        <translation>Rondas de DS</translation>
+        <source>OBF Rounds</source>
+        <translation>Rondas de OBF</translation>
     </message>
     <message>
         <source>Date</source>
@@ -741,8 +741,8 @@ Dirección: %4
         <translation>Copiar cambio</translation>
     </message>
     <message>
-        <source>Non-anonymized input selected. &lt;b&gt;Darksend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Darksend, please deselect all non-nonymized inputs first and then check Darksend checkbox again.</source>
-        <translation>Se seleccionó alguna entrada no anónima. &lt;b&gt;Darksend se desactivará.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Si aún desea usar Darksend, por favor desmarque primero todas las entradas que no son anónimas y luego active de nuevo la casilla de Darksend.</translation>
+        <source>Non-anonymized input selected. &lt;b&gt;Obfuscate will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscate, please deselect all non-nonymized inputs first and then check Obfuscate checkbox again.</source>
+        <translation>Se seleccionó alguna entrada no anónima. &lt;b&gt;Obfuscate se desactivará.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Si aún desea usar Obfuscate, por favor desmarque primero todas las entradas que no son anónimas y luego active de nuevo la casilla de Obfuscate.</translation>
     </message>
     <message>
         <source>highest</source>
@@ -842,10 +842,10 @@ Dirección: %4
     </message>
 </context>
 <context>
-    <name>DarksendConfig</name>
+    <name>ObfuscateConfig</name>
     <message>
-        <source>Configure Darksend</source>
-        <translation>Configurar Darksend</translation>
+        <source>Configure Obfuscate</source>
+        <translation>Configurar Obfuscate</translation>
     </message>
     <message>
         <source>Basic Privacy</source>
@@ -864,48 +864,48 @@ Dirección: %4
         <translation>Por favor, seleccione el nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 AKL</source>
-        <translation>Usar 2 nodos maestros distintos para mezclar fondos hasta 1000 AKL</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 DNET</source>
+        <translation>Usar 2 nodos maestros distintos para mezclar fondos hasta 1000 DNET</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 AKL</source>
-        <translation>Usar 8 nodos maestros diferentes para mezclar fondos hasta 1000 AKL</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 DNET</source>
+        <translation>Usar 8 nodos maestros diferentes para mezclar fondos hasta 1000 DNET</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Usar 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 AKL to anonymize 1000 AKL</source>
-        <translation>Esta es la opción más rápida y anonimizar 1000 AKL costará alrededor de 0.025 AKL</translation>
+        <source>This option is the quickest and will cost about ~0.025 DNET to anonymize 1000 DNET</source>
+        <translation>Esta es la opción más rápida y anonimizar 1000 DNET costará alrededor de 0.025 DNET</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 AKL to anonymize 1000 AKL</source>
-        <translation>Esta opción es moderadamente rápida y anonimizar 1000 AKL costará alrededor de 0.05 AKL</translation>
+        <source>This option is moderately fast and will cost about 0.05 DNET to anonymize 1000 DNET</source>
+        <translation>Esta opción es moderadamente rápida y anonimizar 1000 DNET costará alrededor de 0.05 DNET</translation>
     </message>
     <message>
-        <source>0.1 AKL per 1000 AKL you anonymize.</source>
-        <translation>0.1 AKL por cada 1000 AKL que anonimice.</translation>
+        <source>0.1 DNET per 1000 DNET you anonymize.</source>
+        <translation>0.1 DNET por cada 1000 DNET que anonimice.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta es la opción más lenta y segura de todas. Usar la anonimización máxima costará</translation>
     </message>
     <message>
-        <source>Darksend Configuration</source>
-        <translation>Configuración de Darksend</translation>
+        <source>Obfuscate Configuration</source>
+        <translation>Configuración de Obfuscate</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Akula's configuration screen.</source>
-        <translation>Darksend fue configurado con éxito en la básica (%1 y 2 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de Akula.</translation>
+        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening AKL's configuration screen.</source>
+        <translation>Obfuscate fue configurado con éxito en la básica (%1 y 2 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de AKL.</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Akula's configuration screen.</source>
-        <translation>Darksend fue configurado con éxito en la alta (%1 y 8 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de Akula.</translation>
+        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening AKL's configuration screen.</source>
+        <translation>Obfuscate fue configurado con éxito en la alta (%1 y 8 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de AKL.</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Akula's configuration screen.</source>
-        <translation>Darksend fue configurado con éxito en la máxima (%1 y 16 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de Akula.</translation>
+        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening AKL's configuration screen.</source>
+        <translation>Obfuscate fue configurado con éxito en la máxima (%1 y 16 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de AKL.</translation>
     </message>
 </context>
 <context>
@@ -947,8 +947,8 @@ Dirección: %4
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Akula address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Akula válida.</translation>
+        <source>The entered address "%1" is not a valid AKL address.</source>
+        <translation>La dirección introducida "%1" no es una dirección AKL válida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1056,8 +1056,8 @@ Dirección: %4
         <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos Akula Core.</translation>
     </message>
     <message>
-        <source>Akula Core will download and store a copy of the Akula block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Akula Core va a descargar y guardar una copia de la cadena de bloques de Akula. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
+        <source>Akula Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Akula Core va a descargar y guardar una copia de la cadena de bloques de AKL. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1122,12 +1122,12 @@ Dirección: %4
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Automatically start Akula after logging in to the system.</source>
-        <translation>Iniciar Akula automáticamente al ingresar en el sistema.</translation>
+        <source>Automatically start AKL after logging in to the system.</source>
+        <translation>Iniciar AKL automáticamente al ingresar en el sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Akula on system login</source>
-        <translation>&amp;Iniciar Akula al ingresar en el sistema</translation>
+        <source>&amp;Start AKL on system login</source>
+        <translation>&amp;Iniciar AKL al ingresar en el sistema</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1146,16 +1146,16 @@ Dirección: %4
         <translation>(0 = automático, &lt;0 = dejar libres ese número de núcleos)</translation>
     </message>
     <message>
-        <source>Darksend rounds to use</source>
-        <translation>Rondas de Darksend a usar</translation>
+        <source>Obfuscate rounds to use</source>
+        <translation>Rondas de Obfuscate a usar</translation>
     </message>
     <message>
-        <source>This amount acts as a threshold to turn off Darksend once it's reached.</source>
-        <translation>Esta cuantía sirve de umbral para que Darksend se apague, una vez sea alcanzada.</translation>
+        <source>This amount acts as a threshold to turn off Obfuscate once it's reached.</source>
+        <translation>Esta cuantía sirve de umbral para que Obfuscate se apague, una vez sea alcanzada.</translation>
     </message>
     <message>
-        <source>Amount of Akula to keep anonymized</source>
-        <translation>Cuantía de Akula a mantener anónima</translation>
+        <source>Amount of AKL to keep anonymized</source>
+        <translation>Cuantía de AKL a mantener anónima</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1174,8 +1174,8 @@ Dirección: %4
         <translation>Permitir conexiones entrantes</translation>
     </message>
     <message>
-        <source>Connect to the Akula network through a SOCKS5 proxy.</source>
-        <translation>Conectarse a la red Akula a través de un proxy SOCKS5.</translation>
+        <source>Connect to the AKL network through a SOCKS5 proxy.</source>
+        <translation>Conectarse a la red AKL a través de un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1206,8 +1206,8 @@ Dirección: %4
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>Automatically open the Akula client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Akula en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the AKL client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente AKL en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1258,14 +1258,14 @@ Dirección: %4
         <translation>I&amp;dioma de la interfaz de usuario</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Akula.</source>
-        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará después de reiniciar Akula.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting AKL.</source>
+        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará después de reiniciar AKL.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/akula/</source>
+https://www.transifex.com/akula-crypto/akula-wallet-translations/</source>
         <translation>¿Idioma no disponible o traducción incompleta? Contribuye a la traducción aquí:
-https://www.transifex.com/projects/p/akula/</translation>
+https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1347,8 +1347,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Akula network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Akula después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AKL network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red AKL después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1371,7 +1371,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>No disponible:</translation>
     </message>
     <message>
-        <source>Mined balance that has not yet matured</source>
+        <source>Staked or masternode rewards that has not yet matured</source>
         <translation>Saldo recién minado que aún no está disponible.</translation>
     </message>
     <message>
@@ -1383,7 +1383,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Transacciones no confirmadas en direcciones de sólo vigilancia</translation>
     </message>
     <message>
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
         <translation>Saldo minado en direcciones de sólo vigilancia que aún no ha madurado</translation>
     </message>
     <message>
@@ -1423,16 +1423,16 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Completado:</translation>
     </message>
     <message>
-        <source>Darksend Balance:</source>
-        <translation>Saldo de Darksend:</translation>
+        <source>Obfuscate Balance:</source>
+        <translation>Saldo de Obfuscate:</translation>
     </message>
     <message>
         <source>Amount and Rounds:</source>
         <translation>Cuantía y Rondas:</translation>
     </message>
     <message>
-        <source>0 AKL / 0 Rounds</source>
-        <translation>0 AKL / 0 Rondas</translation>
+        <source>0 DNET / 0 Rounds</source>
+        <translation>0 DNET / 0 Rondas</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1443,8 +1443,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>n/d</translation>
     </message>
     <message>
-        <source>Darksend</source>
-        <translation>Darksend</translation>
+        <source>Obfuscate</source>
+        <translation>Obfuscate</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1463,16 +1463,16 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>(Último Mensaje)</translation>
     </message>
     <message>
-        <source>Try to manually submit a Darksend request.</source>
-        <translation>Intentar enviar manualmente una solicitud Darksend.</translation>
+        <source>Try to manually submit a Obfuscate request.</source>
+        <translation>Intentar enviar manualmente una solicitud Obfuscate.</translation>
     </message>
     <message>
         <source>Try Mix</source>
         <translation>Probar</translation>
     </message>
     <message>
-        <source>Reset the current status of Darksend (can interrupt Darksend if it's in the process of Mixing, which can cost you money!)</source>
-        <translation>Reiniciar el estado actual de Darksend (¡puede interrumpir Darksend si está en el proceso de Mezcla, lo cual puede costarle dinero!)</translation>
+        <source>Reset the current status of Obfuscate (can interrupt Obfuscate if it's in the process of Mixing, which can cost you money!)</source>
+        <translation>Reiniciar el estado actual de Obfuscate (¡puede interrumpir Obfuscate si está en el proceso de Mezcla, lo cual puede costarle dinero!)</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1487,12 +1487,12 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Desactivado</translation>
     </message>
     <message>
-        <source>Start Darksend Mixing</source>
-        <translation>Iniciar Mezclador Darksend</translation>
+        <source>Start Obfuscate Mixing</source>
+        <translation>Iniciar Mezclador Obfuscate</translation>
     </message>
     <message>
-        <source>Stop Darksend Mixing</source>
-        <translation>Parar Mezclador Darksend</translation>
+        <source>Stop Obfuscate Mixing</source>
+        <translation>Parar Mezclador Obfuscate</translation>
     </message>
     <message>
         <source>No inputs detected</source>
@@ -1535,9 +1535,9 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Activado</translation>
     </message>
     <message>
-        <source>Last Darksend message:
+        <source>Last Obfuscate message:
 </source>
-        <translation>Último mensaje de Darksend:
+        <translation>Último mensaje de Obfuscate:
 </translation>
     </message>
     <message>
@@ -1545,20 +1545,20 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>N/D</translation>
     </message>
     <message>
-        <source>Darksend was successfully reset.</source>
-        <translation>Darksend se reinició correctamente.</translation>
+        <source>Obfuscate was successfully reset.</source>
+        <translation>Obfuscate se reinició correctamente.</translation>
     </message>
     <message>
-        <source>If you don't want to see internal Darksend fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
-        <translation>Si no desea ver las comisiones/transacciones internas de Darksend seleccione "Más Habitual" como Tipo en la pestaña de "Transacciones".</translation>
+        <source>If you don't want to see internal Obfuscate fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
+        <translation>Si no desea ver las comisiones/transacciones internas de Obfuscate seleccione "Más Habitual" como Tipo en la pestaña de "Transacciones".</translation>
     </message>
     <message>
-        <source>Darksend requires at least %1 to use.</source>
-        <translation>Darksend requiere al menos %1 para su uso.</translation>
+        <source>Obfuscate requires at least %1 to use.</source>
+        <translation>Obfuscate requiere al menos %1 para su uso.</translation>
     </message>
     <message>
-        <source>Wallet is locked and user declined to unlock. Disabling Darksend.</source>
-        <translation>El monedero está bloqueado y el usuario rechazó desbloquearlo. Desactivando Darksend.</translation>
+        <source>Wallet is locked and user declined to unlock. Disabling Obfuscate.</source>
+        <translation>El monedero está bloqueado y el usuario rechazó desbloquearlo. Desactivando Obfuscate.</translation>
     </message>
 </context>
 <context>
@@ -1588,8 +1588,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Dirección de pago no válida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Akula address or malformed URI parameters.</source>
-        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección Akula inválida o a parámetros de URI mal formados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid AKL address or malformed URI parameters.</source>
+        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección AKL inválida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1659,7 +1659,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Dirección/Nombre del servidor</translation>
     </message>
     <message>
-        <source>User Agent</source>
+        <source>Version</source>
         <translation>Agente del Usuario</translation>
     </message>
     <message>
@@ -1674,8 +1674,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Cuantía</translation>
     </message>
     <message>
-        <source>Enter a Akula address (e.g. %1)</source>
-        <translation>Introduzca una dirección Akula (e.g. %1)</translation>
+        <source>Enter a AKL address (e.g. %1)</source>
+        <translation>Introduzca una dirección AKL (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1764,7 +1764,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Número de conexiones</translation>
     </message>
     <message>
-        <source>Open the Akula debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the AKL debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede requerir varios segundos para archivos de registro grandes.</translation>
     </message>
     <message>
@@ -1860,7 +1860,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Versión</translation>
     </message>
     <message>
-        <source>User Agent</source>
+        <source>Version</source>
         <translation>Agente del Usuario</translation>
     </message>
     <message>
@@ -1972,8 +1972,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Salientes:</translation>
     </message>
     <message>
-        <source>Welcome to the Akula RPC console.</source>
-        <translation>Bienvenido a la consola RPC de Akula</translation>
+        <source>Welcome to the AKL RPC console.</source>
+        <translation>Bienvenido a la consola RPC de AKL</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2035,8 +2035,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>&amp;Reutilizar una dirección receptora existente (no recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Akula network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, el cual se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red Akula.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AKL network.</source>
+        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, el cual se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red AKL.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2047,8 +2047,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Etiqueta opcional para asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Akula network.</source>
-        <translation>Un mensaje opcional para adjuntar con la solicitud de pago, el cual aparecerá cuando ésta sea abierta.&lt;br&gt;Nota: El mensaje no se enviará con el pago a la red Akula.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AKL network.</source>
+        <translation>Un mensaje opcional para adjuntar con la solicitud de pago, el cual aparecerá cuando ésta sea abierta.&lt;br&gt;Nota: El mensaje no se enviará con el pago a la red AKL.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2201,7 +2201,7 @@ https://www.transifex.com/projects/p/akula/</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar Akula</translation>
+        <translation>Enviar AKL</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2364,8 +2364,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Añadir &amp;Destinatario</translation>
     </message>
     <message>
-        <source>Darksend</source>
-        <translation>Darksend</translation>
+        <source>Obfuscate</source>
+        <translation>Obfuscate</translation>
     </message>
     <message>
         <source>InstantX</source>
@@ -2416,8 +2416,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>fondos anónimos</translation>
     </message>
     <message>
-        <source>(darksend requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(darksend requiere que esta cantidad sea redondeada al %1 más cercano).</translation>
+        <source>(obfuscate requires this amount to be rounded up to the nearest %1).</source>
+        <translation>(obfuscate requiere que esta cantidad sea redondeada al %1 más cercano).</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2496,8 +2496,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Pagar sólo la comisión mínima de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Akula address</source>
-        <translation>Aviso: Dirección de Akula no válida</translation>
+        <source>Warning: Invalid AKL address</source>
+        <translation>Aviso: Dirección de AKL no válida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2519,8 +2519,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Pagar &amp;a:</translation>
     </message>
     <message>
-        <source>The Akula address to send the payment to</source>
-        <translation>La dirección Akula a la cual enviar el pago</translation>
+        <source>The AKL address to send the payment to</source>
+        <translation>La dirección AKL a la cual enviar el pago</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2559,8 +2559,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>A message that was attached to the akula: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Akula network.</source>
-        <translation>Un mensaje que se adjuntó al akula: URI que será almacenada con la transacción para su referencia. Nota: Este mensaje no se enviará a través de la red Akula.</translation>
+        <source>A message that was attached to the akula: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the AKL network.</source>
+        <translation>Un mensaje que se adjuntó al akula: URI que será almacenada con la transacción para su referencia. Nota: Este mensaje no se enviará a través de la red AKL.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2609,8 +2609,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Puede firmar mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa vaga, ya que los ataques de phishing pueden tratar de engañarle para suplantar su identidad. Firme solo declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The Akula address to sign the message with</source>
-        <translation>La dirección Akula con la cual se firma el mensaje</translation>
+        <source>The AKL address to sign the message with</source>
+        <translation>La dirección AKL con la cual se firma el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2641,8 +2641,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Akula address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Akula</translation>
+        <source>Sign the message to prove you own this AKL address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección AKL</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2665,12 +2665,12 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Introduzca la dirección para la firma, el mensaje (asegurándose de copiar tal cual los saltos de línea, espacios, tabulaciones, etc.) y la firma a continuación para verificar el mensaje. Tenga cuidado de no asumir más información de lo que dice el propio mensaje firmado para evitar fraudes basados en ataques de tipo man-in-the-middle.</translation>
     </message>
     <message>
-        <source>The Akula address the message was signed with</source>
-        <translation>La dirección Akula con la cual se firmó el mensaje</translation>
+        <source>The AKL address the message was signed with</source>
+        <translation>La dirección AKL con la cual se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Akula address</source>
-        <translation>Verificar el mensaje para garantizar que fue firmado con la dirección Akula indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified AKL address</source>
+        <translation>Verificar el mensaje para garantizar que fue firmado con la dirección AKL indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2778,16 +2778,16 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>en conflicto</translation>
     </message>
     <message>
-        <source>%1/offline (verified via instantx)</source>
-        <translation>%1 desconectado (comprobado por instantx)</translation>
+        <source>%1/offline (verified via Instantx)</source>
+        <translation>%1 desconectado (comprobado por Instantx)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via instantx)</source>
-        <translation>%1/confirmado (comprobado por instantx)</translation>
+        <source>%1/confirmed (verified via Instantx)</source>
+        <translation>%1/confirmado (comprobado por Instantx)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via instantx)</source>
-        <translation>%1 confirmaciones (comprobado por instantx)</translation>
+        <source>%1 confirmations (verified via Instantx)</source>
+        <translation>%1 confirmaciones (comprobado por Instantx)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3020,8 +3020,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Recibido desde</translation>
     </message>
     <message>
-        <source>Received via Darksend</source>
-        <translation>Recibido mediante Darksend</translation>
+        <source>Received via Obfuscate</source>
+        <translation>Recibido mediante Obfuscate</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3036,24 +3036,24 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Minado</translation>
     </message>
     <message>
-        <source>Darksend Denominate</source>
-        <translation>Denominación Darksend</translation>
+        <source>Obfuscate Denominate</source>
+        <translation>Denominación Obfuscate</translation>
     </message>
     <message>
-        <source>Darksend Collateral Payment</source>
-        <translation>Darksend - Pago de Colateral</translation>
+        <source>Obfuscate Collateral Payment</source>
+        <translation>Obfuscate - Pago de Colateral</translation>
     </message>
     <message>
-        <source>Darksend Make Collateral Inputs</source>
-        <translation>Darksend - Efectuar Entradas de Colateral</translation>
+        <source>Obfuscate Make Collateral Inputs</source>
+        <translation>Obfuscate - Efectuar Entradas de Colateral</translation>
     </message>
     <message>
-        <source>Darksend Create Denominations</source>
-        <translation>Darksend - Crear Denominaciones</translation>
+        <source>Obfuscate Create Denominations</source>
+        <translation>Obfuscate - Crear Denominaciones</translation>
     </message>
     <message>
-        <source>Darksent</source>
-        <translation>Darksent</translation>
+        <source>Obfuscated</source>
+        <translation>Obfuscated</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3131,24 +3131,24 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Enviado a</translation>
     </message>
     <message>
-        <source>Darksent</source>
-        <translation>Darksent</translation>
+        <source>Obfuscated</source>
+        <translation>Obfuscated</translation>
     </message>
     <message>
-        <source>Darksend Make Collateral Inputs</source>
-        <translation>Darksend - Efectuar Entradas de Colateral</translation>
+        <source>Obfuscate Make Collateral Inputs</source>
+        <translation>Obfuscate - Efectuar Entradas de Colateral</translation>
     </message>
     <message>
-        <source>Darksend Create Denominations</source>
-        <translation>Darksend - Crear Denominaciones</translation>
+        <source>Obfuscate Create Denominations</source>
+        <translation>Obfuscate - Crear Denominaciones</translation>
     </message>
     <message>
-        <source>Darksend Denominate</source>
-        <translation>Darksend - Denominar</translation>
+        <source>Obfuscate Denominate</source>
+        <translation>Obfuscate - Denominar</translation>
     </message>
     <message>
-        <source>Darksend Collateral Payment</source>
-        <translation>Darksend - Pago de Colateral</translation>
+        <source>Obfuscate Collateral Payment</source>
+        <translation>Obfuscate - Pago de Colateral</translation>
     </message>
     <message>
         <source>To yourself</source>
@@ -3273,11 +3273,11 @@ https://www.transifex.com/projects/p/akula/</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar Akula</translation>
+        <translation>Enviar AKL</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 AKL.</source>
-        <translation>InstantX aún no soporta el envío de valores tan elevados. Las transacciones están limitadas actualmente a %1 AKL.</translation>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
+        <translation>InstantX aún no soporta el envío de valores tan elevados. Las transacciones están limitadas actualmente a %1 DNET.</translation>
     </message>
 </context>
 <context>
@@ -3330,8 +3330,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>No se ha podido bloquear el directorio de datos %s. Probablemente ya se está ejecutando Akula Core.</translation>
     </message>
     <message>
-        <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Darksend utiliza cuantías denominadas exactas para enviar fondos, simplemente necesita anonimizar algunos akulas más. </translation>
+        <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>Obfuscate utiliza cuantías denominadas exactas para enviar fondos, simplemente necesita anonimizar algunos akulas más. </translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -3386,12 +3386,12 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>No se puede enlazar a %s en este equipo. Akula Core probablemente ya está en funcionamiento.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
-        <translation>No se pueden localizar fondos denominados de Darksend suficientes para esta transacción.</translation>
+        <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
+        <translation>No se pueden localizar fondos denominados de Obfuscate suficientes para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 AKL.</source>
-        <translation>No se pueden localizar fondos no denominados de Darksend suficientes para esta transacción que no sean iguales a 1000 AKL.</translation>
+        <source>Unable to locate enough Obfuscate non-denominated funds for this transaction that are not equal 1000 DNET.</source>
+        <translation>No se pueden localizar fondos no denominados de Obfuscate suficientes para esta transacción que no sean iguales a 1000 DNET.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3491,8 +3491,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Corrupción de base de datos de bloques detectada.</translation>
     </message>
     <message>
-        <source>Darksend options:</source>
-        <translation>Opciones de Darksend:</translation>
+        <source>Obfuscate options:</source>
+        <translation>Opciones de Obfuscate:</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
@@ -3563,8 +3563,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Error: ¡El monedero está bloqueado; no se puede crear la transacción!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Darksend pool</source>
-        <translation>Error: Ya tiene entradas pendientes en el pool de Darksend</translation>
+        <source>Error: You already have pending entries in the Obfuscate pool</source>
+        <translation>Error: Ya tiene entradas pendientes en el pool de Obfuscate</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
@@ -3615,32 +3615,32 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Borrar todas las transacciones del monedero y recuperar únicamente aquellas partes de la cadena de bloques a través de -rescan en el inicio</translation>
     </message>
     <message>
-        <source>Disable all Akula specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desactivar todas las funciones asociadas a Akula (Nodos Maestros, Darksend, InstantX, Presupuesto) (0-1, predeterminado: %u)</translation>
+        <source>Disable all AKL specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desactivar todas las funciones asociadas a AKL (Nodos Maestros, Obfuscate, InstantX, Presupuesto) (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distribuido bajo la licencia de software MIT, vea el archivo COPYING adjunto o &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable instantx, show confirmations for locked transactions (bool, default: %s)</source>
+        <source>Enable Instantx, show confirmations for locked transactions (bool, default: %s)</source>
         <translation>Activar InstantX, mostrar las confirmaciones de transacciones bloqueadas (booleano, predeterminado: %s)</translation>
     </message>
     <message>
-        <source>Enable use of automated darksend for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Activar uso automatizado de Darksend para los fondos almacenados en este monedero (0-1, predeterminado: %u)</translation>
+        <source>Enable use of automated obfuscate for funds stored in this wallet (0-1, default: %u)</source>
+        <translation>Activar uso automatizado de Obfuscate para los fondos almacenados en este monedero (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Error: Se encontró el argumento no permitido -socks. Ajustar la versión de SOCKS ya no es posible, sólo se admiten proxies SOCKS5</translation>
     </message>
     <message>
-        <source>Fees (in AKL/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Las comisiones (en AKL/Kb) menores a ésta se consideran como cero a efectos de transmisión (predeterminado: %s)</translation>
+        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Las comisiones (en DNET/Kb) menores a ésta se consideran como cero a efectos de transmisión (predeterminado: %s)</translation>
     </message>
     <message>
-        <source>Fees (in AKL/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Las comisiones (en AKL/Kb) menores a ésta se consideran como cero a efectos de creación de transacciones (predeterminado: %s)</translation>
+        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Las comisiones (en DNET/Kb) menores a ésta se consideran como cero a efectos de creación de transacciones (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3687,8 +3687,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>Información de salida para depuración (predeterminado: %u, proporcionar una &lt;category&gt; es opcional)</translation>
     </message>
     <message>
-        <source>Provide liquidity to Darksend by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Ofrecer liquidez a Darksend mezclando akula con poca frecuencia y de forma continua (0-100, predeterminado: %u, 1=muy frecuente, comisiones altas, 100=muy pocas veces, comisiones bajas)</translation>
+        <source>Provide liquidity to Obfuscate by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
+        <translation>Ofrecer liquidez a Obfuscate mezclando akula con poca frecuencia y de forma continua (0-100, predeterminado: %u, 1=muy frecuente, comisiones altas, 100=muy pocas veces, comisiones bajas)</translation>
     </message>
     <message>
         <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
@@ -3720,7 +3720,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Akula Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "AKL Alert" admin@foo.com
 </source>
         <translation>Para usar akulad, o la opción -server de akula-qt, debe establecer rpcpassword en el archivo de configuración:
 %s
@@ -3731,12 +3731,12 @@ rpcpassword=%s
 El nombre de usuario y la contraseña NO DEBEN ser iguales.
 Si el archivo no existe, créelo con permisos de sólo lectura para su propietario.
 También resulta recomendable establecer alertnotify para que se le notifique de posibles problemas;
-por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s "Alerta de AKL" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 AKL.</source>
-        <translation>No se pueden localizar fondos suficientes para esta transacción que no sean iguales a 1000 AKL.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 DNET.</source>
+        <translation>No se pueden localizar fondos suficientes para esta transacción que no sean iguales a 1000 DNET.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3759,8 +3759,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
         <translation>Los pares de la lista blanca no pueden ser excluidos por DoS y sus transacciones siempre se transmitirán, incluso si ya se encuentran en el grupo de memoria, útil e.g. para una pasarela</translation>
     </message>
     <message>
-        <source>(9999 could be used only on mainnet)</source>
-        <translation>(9999 sólo se puede usar en la red principal)</translation>
+        <source>(2214 could be used only on mainnet)</source>
+        <translation>(2214 sólo se puede usar en la red principal)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3809,16 +3809,16 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
         <translation>No se pudo intrepretar el valor -rpcbind %s como una dirección de red</translation>
     </message>
     <message>
-        <source>Darksend is idle.</source>
-        <translation>Darksend está parado.</translation>
+        <source>Obfuscate is idle.</source>
+        <translation>Obfuscate está parado.</translation>
     </message>
     <message>
-        <source>Darksend request complete:</source>
-        <translation>Solicitud Darksend completada:</translation>
+        <source>Obfuscate request complete:</source>
+        <translation>Solicitud Obfuscate completada:</translation>
     </message>
     <message>
-        <source>Darksend request incomplete:</source>
-        <translation>Petición de Darksend incompleta:</translation>
+        <source>Obfuscate request incomplete:</source>
+        <translation>Petición de Obfuscate incompleta:</translation>
     </message>
     <message>
         <source>Disable safemode, override a real safe mode event (default: %u)</source>
@@ -3849,8 +3849,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
         <translation>Error: Se encontró el argumento no soportado -tor, use -onion.</translation>
     </message>
     <message>
-        <source>Fee (in AKL/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en AKL/kB) a añadir sobre las transacciones que envíe (predeterminado: %s)</translation>
+        <source>Fee (in DNET/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en DNET/kB) a añadir sobre las transacciones que envíe (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -3949,8 +3949,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
         <translation>Cuantía inválida para -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Last successful Darksend action was too recent.</source>
-        <translation>La última acción de Darksend exitosa era demasiado reciente.</translation>
+        <source>Last successful Obfuscate action was too recent.</source>
+        <translation>La última acción de Obfuscate exitosa era demasiado reciente.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -4177,8 +4177,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
         <translation>La clave prinvada del nodo maestro no es válida. Por favor, consulte la  documentación.</translation>
     </message>
     <message>
-        <source>(must be 9999 for mainnet)</source>
-        <translation>(debe ser 9999 para la red principal)</translation>
+        <source>(must be2214 for mainnet)</source>
+        <translation>(debe ser2214 para la red principal)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
@@ -4217,16 +4217,16 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
         <translation>Clave KeePassHttp para la comunicación cifrada AES con KeePass</translation>
     </message>
     <message>
-        <source>Keep N AKL anonymized (default: %u)</source>
-        <translation>Conservar N AKL anónimos (predeterminado: %u)</translation>
+        <source>Keep N DNET anonymized (default: %u)</source>
+        <translation>Conservar N DNET anónimos (predeterminado: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Mantenga a lo sumo &lt;n&gt; transacciones no conectables en la memoria (por defecto: %u)</translation>
     </message>
     <message>
-        <source>Last Darksend was too recent.</source>
-        <translation>El último Darksend era demasiado reciente.</translation>
+        <source>Last Obfuscate was too recent.</source>
+        <translation>El último Obfuscate era demasiado reciente.</translation>
     </message>
     <message>
         <source>Line: %d</source>
@@ -4477,8 +4477,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Akula" admin@foo.com
         <translation>Nombre de usuario para las conexiones JSON-RPC</translation>
     </message>
     <message>
-        <source>Value more than Darksend pool maximum allows.</source>
-        <translation>El valor es mayor al máximo permitido por el pool Darksend. </translation>
+        <source>Value more than Obfuscate pool maximum allows.</source>
+        <translation>El valor es mayor al máximo permitido por el pool Obfuscate. </translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

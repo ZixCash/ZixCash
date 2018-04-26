@@ -1,4 +1,4 @@
-<TS language="zh_CN" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
@@ -62,11 +62,11 @@
         <translation>正在接收地址</translation>
     </message>
     <message>
-        <source>These are your Akula addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your AKL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>这些是你要付款过去的达世币地址。在付款之前，务必要检查金额和收款地址是否正确。</translation>
     </message>
     <message>
-        <source>These are your Akula addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your AKL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>这些是你用来收款的达世币地址。建议在每次交易时，都使用一个新的收款地址。</translation>
     </message>
     <message>
@@ -136,7 +136,7 @@
         <translation>当OS帐号被盗就禁止发送币。这并不提供真正的安全性。</translation>
     </message>
     <message>
-        <source>For anonymization only</source>
+        <source>For anonymization and staking only</source>
         <translation>仅限匿名</translation>
     </message>
     <message>
@@ -176,7 +176,7 @@
         <translation>确认加密钱包</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AKL&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DNET&lt;/b&gt;!</source>
         <translation>警告:如果把钱包加​​密后又忘记密码，你就会从此&lt;b&gt;失去所有的达世币了&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>钱包已加密</translation>
     </message>
     <message>
-        <source>Akula will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your akulas from being stolen by malware infecting your computer.</source>
+        <source>AKL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your akulas from being stolen by malware infecting your computer.</source>
         <translation>达世币软体现在要关闭，以完成加密过程。请注意，加密钱包不能完全防止恶意软件入侵你的电脑盗取你的达世币。</translation>
     </message>
     <message>
@@ -255,7 +255,7 @@
         <translation>发送(&amp;S)</translation>
     </message>
     <message>
-        <source>Send coins to a Akula address</source>
+        <source>Send coins to a AKL address</source>
         <translation>发送币至达世币地址</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@
         <translation>选项(&amp;O)...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Akula</source>
+        <source>Modify configuration options for AKL</source>
         <translation>修改达世币配置选项</translation>
     </message>
     <message>
@@ -355,7 +355,7 @@
         <translation>消息签名(&amp;M)...</translation>
     </message>
     <message>
-        <source>Sign messages with your Akula addresses to prove you own them</source>
+        <source>Sign messages with your AKL addresses to prove you own them</source>
         <translation>用达世币地址签署讯息来证明地址是你的</translation>
     </message>
     <message>
@@ -363,7 +363,7 @@
         <translation>验证消息(&amp;V)...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Akula addresses</source>
+        <source>Verify messages to ensure they were signed with specified AKL addresses</source>
         <translation>验证讯息是用来确定讯息是用指定的达世币地址签署的</translation>
     </message>
     <message>
@@ -463,7 +463,7 @@
         <translation>正在同步附加数据:%p%</translation>
     </message>
     <message>
-        <source>Show the Akula Core help message to get a list with possible Akula command-line options</source>
+        <source>Show the Akula Core help message to get a list with possible AKL command-line options</source>
         <translation>打开达世币核心帮助信息取得可使用的命令行列表</translation>
     </message>
     <message>
@@ -487,7 +487,7 @@
         <translation>分页工具栏</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Akula network</source>
+        <source>%n active connection(s) to AKL network</source>
         <translation><numerusform>%n 已连接至达世币网络</numerusform></translation>
     </message>
     <message>
@@ -594,7 +594,7 @@ Address: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <source>Total: %1 (DS compatible: %2 / Enabled: %3)</source>
+        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
         <translation>总量:%1 (匿名发送兼容: %2 / 可用: %3)</translation>
     </message>
     <message>
@@ -669,7 +669,7 @@ Address: %4
         <translation>收款地址</translation>
     </message>
     <message>
-        <source>DS Rounds</source>
+        <source>OBF Rounds</source>
         <translation>匿名发送循环</translation>
     </message>
     <message>
@@ -741,7 +741,7 @@ Address: %4
         <translation>复制零钱</translation>
     </message>
     <message>
-        <source>Non-anonymized input selected. &lt;b&gt;Darksend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Darksend, please deselect all non-nonymized inputs first and then check Darksend checkbox again.</source>
+        <source>Non-anonymized input selected. &lt;b&gt;Obfuscate will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscate, please deselect all non-nonymized inputs first and then check Obfuscate checkbox again.</source>
         <translation>已选择非匿名输入. &lt;b&gt;匿名发送将会被禁用.&lt;/ b&gt;&lt;br&gt; &lt;br&gt;如果你仍然想使用匿名发送功能,请先取消所选的非匿名输入,然后再勾选匿名发送.</translation>
     </message>
     <message>
@@ -842,9 +842,9 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>DarksendConfig</name>
+    <name>ObfuscateConfig</name>
     <message>
-        <source>Configure Darksend</source>
+        <source>Configure Obfuscate</source>
         <translation>配置匿名发送</translation>
     </message>
     <message>
@@ -864,11 +864,11 @@ Address: %4
         <translation>请选择隐私等级。</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 AKL</source>
+        <source>Use 2 separate masternodes to mix funds up to 1000 DNET</source>
         <translation>使用2个独立的主节点混合资金最多1000达世币</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 AKL</source>
+        <source>Use 8 separate masternodes to mix funds up to 1000 DNET</source>
         <translation>使用8个独立的主节点混合资金最多1000达世币</translation>
     </message>
     <message>
@@ -876,15 +876,15 @@ Address: %4
         <translation>使用16个独立主节点</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 AKL to anonymize 1000 AKL</source>
+        <source>This option is the quickest and will cost about ~0.025 DNET to anonymize 1000 DNET</source>
         <translation>此选项为最快速度，需要支付0.025达世币/1000达世币的匿名处理费用。</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 AKL to anonymize 1000 AKL</source>
+        <source>This option is moderately fast and will cost about 0.05 DNET to anonymize 1000 DNET</source>
         <translation>此选项为一般速度，需要支付0.05达世币/1000达世币的匿名处理费用。</translation>
     </message>
     <message>
-        <source>0.1 AKL per 1000 AKL you anonymize.</source>
+        <source>0.1 DNET per 1000 DNET you anonymize.</source>
         <translation>0.1达世币/1000达世币的匿名处理费用。</translation>
     </message>
     <message>
@@ -892,19 +892,19 @@ Address: %4
         <translation>此选项提供最慢速度但是却最安全的匿名服务。最多匿名化将花费</translation>
     </message>
     <message>
-        <source>Darksend Configuration</source>
+        <source>Obfuscate Configuration</source>
         <translation>匿名发送配置</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Akula's configuration screen.</source>
+        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening AKL's configuration screen.</source>
         <translation>匿名发送已成功设置为一般(%1到2次循环)。可以通过打开达世币配置窗口来随时修改。</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Akula's configuration screen.</source>
+        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening AKL's configuration screen.</source>
         <translation>匿名发送已成功设置为高(%1到8次循环)。可以通过打开达世币配置窗口来随时修改。</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Akula's configuration screen.</source>
+        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening AKL's configuration screen.</source>
         <translation>匿名发送已成功设置为最高(%1到16次循环)。可以通过打开达世币配置窗口来随时修改。</translation>
     </message>
 </context>
@@ -947,7 +947,7 @@ Address: %4
         <translation>编辑发送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Akula address.</source>
+        <source>The entered address "%1" is not a valid AKL address.</source>
         <translation>输入的地址"%1"不是有效的达世币地址。</translation>
     </message>
     <message>
@@ -1057,7 +1057,7 @@ Address: %4
         <translation>此次为第一次程序启动，你可以选择储存达世币核心数据的路径。</translation>
     </message>
     <message>
-        <source>Akula Core will download and store a copy of the Akula block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Akula Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>达世币核心将会下载并存储达世币数据链。至少有%1GB的数据会保存到此路径下，并且随着时间增长。钱包文件也将存储到此路径下。</translation>
     </message>
     <message>
@@ -1123,11 +1123,11 @@ Address: %4
         <translation>主要(&amp;M)</translation>
     </message>
     <message>
-        <source>Automatically start Akula after logging in to the system.</source>
+        <source>Automatically start AKL after logging in to the system.</source>
         <translation>登录系统后自动启动达世币程序</translation>
     </message>
     <message>
-        <source>&amp;Start Akula on system login</source>
+        <source>&amp;Start AKL on system login</source>
         <translation>&amp;系统登录时启动达世币程序</translation>
     </message>
     <message>
@@ -1147,15 +1147,15 @@ Address: %4
         <translation>(0 = 自动, &lt;0 = 离开很多免费的核心)</translation>
     </message>
     <message>
-        <source>Darksend rounds to use</source>
+        <source>Obfuscate rounds to use</source>
         <translation>匿名传送的循环次数</translation>
     </message>
     <message>
-        <source>This amount acts as a threshold to turn off Darksend once it's reached.</source>
+        <source>This amount acts as a threshold to turn off Obfuscate once it's reached.</source>
         <translation>此金额为关闭匿名发送的极限.</translation>
     </message>
     <message>
-        <source>Amount of Akula to keep anonymized</source>
+        <source>Amount of AKL to keep anonymized</source>
         <translation>保持匿名化的达世币数</translation>
     </message>
     <message>
@@ -1175,7 +1175,7 @@ Address: %4
         <translation>接受外来链接</translation>
     </message>
     <message>
-        <source>Connect to the Akula network through a SOCKS5 proxy.</source>
+        <source>Connect to the AKL network through a SOCKS5 proxy.</source>
         <translation>通过SOCKS5代理链接达世币网络。</translation>
     </message>
     <message>
@@ -1207,7 +1207,7 @@ Address: %4
         <translation>网络(&amp;N)</translation>
     </message>
     <message>
-        <source>Automatically open the Akula client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the AKL client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自动对路由器打开达世币客户端端口。此项只在路由器支持UPnP时有效。</translation>
     </message>
     <message>
@@ -1259,14 +1259,14 @@ Address: %4
         <translation>用户界面语言(&amp;L)：</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Akula.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting AKL.</source>
         <translation>用户界面语言在这里设置。在重启达世币程序后生效。</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/akula/</source>
+https://www.transifex.com/akula-crypto/akula-wallet-translations/</source>
         <translation>缺少相关语言或翻译不完整? 请到这里协助翻译:
-https://www.transifex.com/projects/p/akula/</translation>
+https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1348,7 +1348,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>表单</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Akula network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AKL network after a connection is established, but this process has not completed yet.</source>
         <translation>显示信息也许已过期。当与达世币网络连接后钱包程序会自动同步，但现在还未完成。</translation>
     </message>
     <message>
@@ -1372,7 +1372,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>未成熟的：</translation>
     </message>
     <message>
-        <source>Mined balance that has not yet matured</source>
+        <source>Staked or masternode rewards that has not yet matured</source>
         <translation>尚未成熟的挖矿收入余额</translation>
     </message>
     <message>
@@ -1384,7 +1384,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>仅限查看的还未交易确认的地址</translation>
     </message>
     <message>
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
         <translation>仅限查看的地址中尚未成熟的挖矿收入余额</translation>
     </message>
     <message>
@@ -1424,7 +1424,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>完成度:</translation>
     </message>
     <message>
-        <source>Darksend Balance:</source>
+        <source>Obfuscate Balance:</source>
         <translation>匿名传送余额:</translation>
     </message>
     <message>
@@ -1432,7 +1432,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>数量与循环次数:</translation>
     </message>
     <message>
-        <source>0 AKL / 0 Rounds</source>
+        <source>0 DNET / 0 Rounds</source>
         <translation>0 达世币 / 0 循环数</translation>
     </message>
     <message>
@@ -1444,7 +1444,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>n/a</translation>
     </message>
     <message>
-        <source>Darksend</source>
+        <source>Obfuscate</source>
         <translation>匿名发送</translation>
     </message>
     <message>
@@ -1457,14 +1457,14 @@ https://www.transifex.com/projects/p/akula/</translation>
     </message>
     <message>
         <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>您向主节点所提交的用以面额化混合的AKL,&lt;br&gt;当其他用户提交相同的面额化AKL数量时,将开始混合.</translation>
+        <translation>您向主节点所提交的用以面额化混合的DNET,&lt;br&gt;当其他用户提交相同的面额化DNET数量时,将开始混合.</translation>
     </message>
     <message>
         <source>(Last Message)</source>
         <translation>(最近一次信息)</translation>
     </message>
     <message>
-        <source>Try to manually submit a Darksend request.</source>
+        <source>Try to manually submit a Obfuscate request.</source>
         <translation>尝试手动提交一次匿名化请求</translation>
     </message>
     <message>
@@ -1472,7 +1472,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>尝试混合</translation>
     </message>
     <message>
-        <source>Reset the current status of Darksend (can interrupt Darksend if it's in the process of Mixing, which can cost you money!)</source>
+        <source>Reset the current status of Obfuscate (can interrupt Obfuscate if it's in the process of Mixing, which can cost you money!)</source>
         <translation>重置目前匿名状态(此操作可能会影响您目前正在执行的混合过程，并且产生费用!)</translation>
     </message>
     <message>
@@ -1488,11 +1488,11 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>关闭</translation>
     </message>
     <message>
-        <source>Start Darksend Mixing</source>
+        <source>Start Obfuscate Mixing</source>
         <translation>开始匿名化混合</translation>
     </message>
     <message>
-        <source>Stop Darksend Mixing</source>
+        <source>Stop Obfuscate Mixing</source>
         <translation>关闭匿名化混合</translation>
     </message>
     <message>
@@ -1532,7 +1532,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>打开</translation>
     </message>
     <message>
-        <source>Last Darksend message:
+        <source>Last Obfuscate message:
 </source>
         <translation>最后一次匿名信息:
 </translation>
@@ -1542,15 +1542,15 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>不可用</translation>
     </message>
     <message>
-        <source>Darksend was successfully reset.</source>
+        <source>Obfuscate was successfully reset.</source>
         <translation>匿名化被成功重置。</translation>
     </message>
     <message>
-        <source>Darksend requires at least %1 to use.</source>
+        <source>Obfuscate requires at least %1 to use.</source>
         <translation>匿名化要求至少 %1 以使用</translation>
     </message>
     <message>
-        <source>Wallet is locked and user declined to unlock. Disabling Darksend.</source>
+        <source>Wallet is locked and user declined to unlock. Disabling Obfuscate.</source>
         <translation>钱包已锁定需要用户解锁。 正在关闭匿名化。</translation>
     </message>
 </context>
@@ -1581,7 +1581,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>无效的付款地址 %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Akula address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid AKL address or malformed URI parameters.</source>
         <translation>链接不能被解析! 原因可能是无效的达世币地址或输入的链接有错。</translation>
     </message>
     <message>
@@ -1652,7 +1652,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>地址/主机名</translation>
     </message>
     <message>
-        <source>User Agent</source>
+        <source>Version</source>
         <translation>用户代理</translation>
     </message>
     <message>
@@ -1667,7 +1667,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>金额</translation>
     </message>
     <message>
-        <source>Enter a Akula address (e.g. %1)</source>
+        <source>Enter a AKL address (e.g. %1)</source>
         <translation>输入达世币地址(e.g. %1)</translation>
     </message>
     <message>
@@ -1757,7 +1757,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>连接数</translation>
     </message>
     <message>
-        <source>Open the Akula debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the AKL debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>从数据路径打开达世币Debug日志，这个过程可能需要几秒钟。</translation>
     </message>
     <message>
@@ -1853,7 +1853,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>版本</translation>
     </message>
     <message>
-        <source>User Agent</source>
+        <source>Version</source>
         <translation>用户代理</translation>
     </message>
     <message>
@@ -1965,7 +1965,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>输出：</translation>
     </message>
     <message>
-        <source>Welcome to the Akula RPC console.</source>
+        <source>Welcome to the AKL RPC console.</source>
         <translation>欢迎来到达世币RPC控制台。</translation>
     </message>
     <message>
@@ -2028,7 +2028,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>重用现有的接收地址（不推荐）</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Akula network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AKL network.</source>
         <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。注意: 这个讯息不会随着付款送到达世币网路上。</translation>
     </message>
     <message>
@@ -2040,7 +2040,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>可为新建的收款地址添加一个标签。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Akula network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AKL network.</source>
         <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。&lt;br&gt;注意: 这个讯息不会随着付款送到达世币网路上。</translation>
     </message>
     <message>
@@ -2361,7 +2361,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>添加收款人(&amp;R)</translation>
     </message>
     <message>
-        <source>Darksend</source>
+        <source>Obfuscate</source>
         <translation>匿名发送</translation>
     </message>
     <message>
@@ -2413,7 +2413,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>匿名化金额</translation>
     </message>
     <message>
-        <source>(darksend requires this amount to be rounded up to the nearest %1).</source>
+        <source>(obfuscate requires this amount to be rounded up to the nearest %1).</source>
         <translation>(匿名发送需要四舍五入此金额致最接近的值%1).</translation>
     </message>
     <message>
@@ -2489,7 +2489,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>只付最低手续费%1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Akula address</source>
+        <source>Warning: Invalid AKL address</source>
         <translation>警告：无效的达世币地址</translation>
     </message>
     <message>
@@ -2512,7 +2512,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>付给(&amp;T)：</translation>
     </message>
     <message>
-        <source>The Akula address to send the payment to</source>
+        <source>The AKL address to send the payment to</source>
         <translation>选择发款地址</translation>
     </message>
     <message>
@@ -2552,7 +2552,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>消息：</translation>
     </message>
     <message>
-        <source>A message that was attached to the akula: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Akula network.</source>
+        <source>A message that was attached to the akula: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the AKL network.</source>
         <translation>附加在达世币付款协议URI中的信息,会和交易内容一并存储,可供您参考.提示:此信息不会发送到达世币网络上.</translation>
     </message>
     <message>
@@ -2602,7 +2602,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>您可以用你的地址对消息进行签名，以证明您是该地址的所有人。注意不要对模棱两可的消息签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
     </message>
     <message>
-        <source>The Akula address to sign the message with</source>
+        <source>The AKL address to sign the message with</source>
         <translation>对此地址进行签名</translation>
     </message>
     <message>
@@ -2634,7 +2634,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>复制当前签名至剪切板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Akula address</source>
+        <source>Sign the message to prove you own this AKL address</source>
         <translation>签署信息证明你拥有此达世币地址</translation>
     </message>
     <message>
@@ -2658,11 +2658,11 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>在下面输入签名地址，消息（请确保换行符、空格符、制表符等等一个不漏）和签名以验证消息。请确保签名信息准确，提防中间人攻击。</translation>
     </message>
     <message>
-        <source>The Akula address the message was signed with</source>
+        <source>The AKL address the message was signed with</source>
         <translation>已签名的地址</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Akula address</source>
+        <source>Verify the message to ensure it was signed with the specified AKL address</source>
         <translation>验证信息用来确保此被签署信息对应相对的达世币地址</translation>
     </message>
     <message>
@@ -2771,15 +2771,15 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>发现冲突</translation>
     </message>
     <message>
-        <source>%1/offline (verified via instantx)</source>
+        <source>%1/offline (verified via Instantx)</source>
         <translation>%1/下线(经过即时支付系统认证)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via instantx)</source>
+        <source>%1/confirmed (verified via Instantx)</source>
         <translation>%1/已确认(经过即时支付系统认证)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via instantx)</source>
+        <source>%1 confirmations (verified via Instantx)</source>
         <translation>%1/确认完成(经过即时支付付系统认证)</translation>
     </message>
     <message>
@@ -3009,7 +3009,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>收款来自</translation>
     </message>
     <message>
-        <source>Received via Darksend</source>
+        <source>Received via Obfuscate</source>
         <translation>已通过匿名处理接收</translation>
     </message>
     <message>
@@ -3025,23 +3025,23 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>挖矿所得</translation>
     </message>
     <message>
-        <source>Darksend Denominate</source>
+        <source>Obfuscate Denominate</source>
         <translation>匿名发送面额化</translation>
     </message>
     <message>
-        <source>Darksend Collateral Payment</source>
+        <source>Obfuscate Collateral Payment</source>
         <translation>匿名发送附加费用</translation>
     </message>
     <message>
-        <source>Darksend Make Collateral Inputs</source>
+        <source>Obfuscate Make Collateral Inputs</source>
         <translation>匿名发送会产生附加费用</translation>
     </message>
     <message>
-        <source>Darksend Create Denominations</source>
+        <source>Obfuscate Create Denominations</source>
         <translation>匿名发送会生成面值额度</translation>
     </message>
     <message>
-        <source>Darksent</source>
+        <source>Obfuscated</source>
         <translation>匿名发送</translation>
     </message>
     <message>
@@ -3116,23 +3116,23 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>发送给</translation>
     </message>
     <message>
-        <source>Darksent</source>
+        <source>Obfuscated</source>
         <translation>匿名发送</translation>
     </message>
     <message>
-        <source>Darksend Make Collateral Inputs</source>
+        <source>Obfuscate Make Collateral Inputs</source>
         <translation>匿名发送会产生附加费用</translation>
     </message>
     <message>
-        <source>Darksend Create Denominations</source>
+        <source>Obfuscate Create Denominations</source>
         <translation>匿名发送会生成面值额度</translation>
     </message>
     <message>
-        <source>Darksend Denominate</source>
+        <source>Obfuscate Denominate</source>
         <translation>匿名发送面额化</translation>
     </message>
     <message>
-        <source>Darksend Collateral Payment</source>
+        <source>Obfuscate Collateral Payment</source>
         <translation>匿名发送附加费用</translation>
     </message>
     <message>
@@ -3257,7 +3257,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>发送达世币</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 AKL.</source>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
         <translation>即时支付功能目前还不支持发送如此高的金额.目前限制在%1 达世币.</translation>
     </message>
 </context>
@@ -3311,7 +3311,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>不能获得锁定的数据目录 %s. 达世币核心可能已经在运行。</translation>
     </message>
     <message>
-        <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
         <translation>为了匿名发送的正常发送,您可能需要再混淆一些币.</translation>
     </message>
     <message>
@@ -3343,12 +3343,12 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>无法绑定%s此计算机. 达世币核心应该已经在运行中了.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
-        <translation>无法找到足够的已匿名化资金来完成交易,不足1000 AKL.</translation>
+        <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
+        <translation>无法找到足够的已匿名化资金来完成交易,不足1000 DNET.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 AKL.</source>
-        <translation>无法找到足够的未匿名化资金来完成交易,不足1000 AKL.</translation>
+        <source>Unable to locate enough Obfuscate non-denominated funds for this transaction that are not equal 1000 DNET.</source>
+        <translation>无法找到足够的未匿名化资金来完成交易,不足1000 DNET.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3447,7 +3447,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>已找到损坏的数据块</translation>
     </message>
     <message>
-        <source>Darksend options:</source>
+        <source>Obfuscate options:</source>
         <translation>匿名发送选项：</translation>
     </message>
     <message>
@@ -3531,23 +3531,23 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>删除钱包里的所有交易信息, 并且在下次启动时, 使用 -rescan 来从区块链中恢复</translation>
     </message>
     <message>
-        <source>Disable all Akula specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all AKL specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
         <translation>禁止所有达世币附加功能(主节点, 匿名发送, 即时发送, 预算) (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable instantx, show confirmations for locked transactions (bool, default: %s)</source>
+        <source>Enable Instantx, show confirmations for locked transactions (bool, default: %s)</source>
         <translation>激活即时支付,显示锁定交易的确认数(bool, 默认: %s)</translation>
     </message>
     <message>
-        <source>Enable use of automated darksend for funds stored in this wallet (0-1, default: %u)</source>
+        <source>Enable use of automated obfuscate for funds stored in this wallet (0-1, default: %u)</source>
         <translation>允许存储在这个钱包内的资金自动使用匿名发送(0-1, 默认: %u)</translation>
     </message>
     <message>
-        <source>Fees (in AKL/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation>如果手续费比这个值低,就视为没有付手续费(当产生交易时)(默认: %s)</translation>
     </message>
     <message>
-        <source>Fees (in AKL/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation>如果手续费比这个值低,就视为没有付手续费(当产生交易时)(默认: %s)</translation>
     </message>
     <message>
@@ -3591,8 +3591,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>此产品包括了由OpenSSL Project所开发的OpenSSL Toolkit 软件&lt;https://www.openssl.org/&gt;, 和由Eric Young 编写的加密软件, 以及由Thomas Bernard 编写的UPnP软件.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 AKL.</source>
-        <translation>无法找到足够的资金完成交易,不足1000 AKL.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 DNET.</source>
+        <translation>无法找到足够的资金完成交易,不足1000 DNET.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3615,8 +3615,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>在白名单中的节点不会因为检测到DoS攻击而被停用. 来自这些节点的交易也一定会被转发, 即使说交易本神就来自记忆池. 适用于网关</translation>
     </message>
     <message>
-        <source>(9999 could be used only on mainnet)</source>
-        <translation>(9999 只能被用于主网)</translation>
+        <source>(2214 could be used only on mainnet)</source>
+        <translation>(2214 只能被用于主网)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3661,15 +3661,15 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>无法解析 -rpcbind 参数 %s 作为网络地址</translation>
     </message>
     <message>
-        <source>Darksend is idle.</source>
+        <source>Obfuscate is idle.</source>
         <translation>匿名化处于空闲状态</translation>
     </message>
     <message>
-        <source>Darksend request complete:</source>
+        <source>Obfuscate request complete:</source>
         <translation>匿名化请求已完成:</translation>
     </message>
     <message>
-        <source>Darksend request incomplete:</source>
+        <source>Obfuscate request incomplete:</source>
         <translation>匿名化请求未完成:</translation>
     </message>
     <message>
@@ -3786,7 +3786,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>设定 -paytxfee=&lt;金额&gt; 的金额无效: '%s'</translation>
     </message>
     <message>
-        <source>Last successful Darksend action was too recent.</source>
+        <source>Last successful Obfuscate action was too recent.</source>
         <translation>最后一次成功匿名发送刚刚完成.</translation>
     </message>
     <message>
@@ -3959,8 +3959,8 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>无效主节点私钥。请查阅文件材料。</translation>
     </message>
     <message>
-        <source>(must be 9999 for mainnet)</source>
-        <translation>(设置 9999 为主网)</translation>
+        <source>(must be2214 for mainnet)</source>
+        <translation>(设置2214 为主网)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
@@ -3987,11 +3987,11 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>检测到无效脚本。</translation>
     </message>
     <message>
-        <source>Keep N AKL anonymized (default: %u)</source>
+        <source>Keep N DNET anonymized (default: %u)</source>
         <translation>保持定量达世币匿名化(默认: %u)</translation>
     </message>
     <message>
-        <source>Last Darksend was too recent.</source>
+        <source>Last Obfuscate was too recent.</source>
         <translation>最后一次匿名发送刚刚完成。</translation>
     </message>
     <message>
@@ -4215,7 +4215,7 @@ https://www.transifex.com/projects/p/akula/</translation>
         <translation>链接JSON-RPC的用户名</translation>
     </message>
     <message>
-        <source>Value more than Darksend pool maximum allows.</source>
+        <source>Value more than Obfuscate pool maximum allows.</source>
         <translation>数值超过匿名发送池所允许的最大数。</translation>
     </message>
     <message>

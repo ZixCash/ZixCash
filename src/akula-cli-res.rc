@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Akula"
-            VALUE "FileDescription",    "akula-cli (JSON-RPC client for Akula Core)"
+            VALUE "CompanyName",        "AKL"
+            VALUE "FileDescription",    "AKL-cli (OSS RPC client for AKL)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "akula-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
-            VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
+            VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "akula-cli.exe"
-            VALUE "ProductName",        "akula-cli"
+            VALUE "ProductName",        "AKL-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

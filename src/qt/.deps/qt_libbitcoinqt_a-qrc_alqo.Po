@@ -1,0 +1,4 @@
+qt/qt_libbitcoinqt_a-qrc_akula.o: qt/qrc_akula.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

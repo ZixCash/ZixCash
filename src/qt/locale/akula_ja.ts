@@ -1,4 +1,4 @@
-<TS language="ja" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.0">
 <context>
     <name>AddressBookPage</name>
     <message>
@@ -642,7 +642,7 @@
     </message>
 </context>
 <context>
-    <name>DarksendConfig</name>
+    <name>ObfuscateConfig</name>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -1010,7 +1010,7 @@
         <translation>未完成：</translation>
     </message>
     <message>
-        <source>Mined balance that has not yet matured</source>
+        <source>Staked or masternode rewards that has not yet matured</source>
         <translation>完成していない採掘された残高</translation>
     </message>
     <message>
@@ -1022,7 +1022,7 @@
         <translation>監視限定アドレスに対する未検証のトランザクション</translation>
     </message>
     <message>
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
         <translation>ウォッチオンリーアドレスの採掘された残高のうち、成熟していないもの</translation>
     </message>
     <message>
@@ -1148,7 +1148,7 @@
         <translation>アドレス / ホスト名</translation>
     </message>
     <message>
-        <source>User Agent</source>
+        <source>Version</source>
         <translation>ユーザエージェント</translation>
     </message>
     <message>
@@ -1325,7 +1325,7 @@
         <translation>バージョン</translation>
     </message>
     <message>
-        <source>User Agent</source>
+        <source>Version</source>
         <translation>ユーザエージェント</translation>
     </message>
     <message>

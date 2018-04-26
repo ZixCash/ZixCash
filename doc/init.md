@@ -13,9 +13,8 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three Linux startup configurations assume the existence of a "akulacore" user
+All three startup configurations assume the existence of a "akula" user
 and group.  They must be created before attempting to use these scripts.
-The OS X configuration assumes akulad will be set up for the current user.
 
 2. Configuration
 ---------------------------------
@@ -30,93 +29,68 @@ file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If akulad is run with the "-server" flag (set by default), and no rpcpassword is set,
-it will use a special cookie file for authentication. The cookie is generated with random
-content when the daemon starts, and deleted when it exits. Read access to this file
-controls who can access it through RPC.
+If akulad is run with "-daemon" flag, and no rpcpassword is set, it will
+print a randomly generated suitable password to stderr.  You can also
+generate one from the shell yourself like this:
 
-By default the cookie is stored in the data directory, but it's location can be overridden
-with the option '-rpccookiefile'.
+bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-This allows for running akulad without having to do any manual configuration.
-
-`conf`, `pid`, and `wallet` accept relative paths which are interpreted as
-relative to the data directory. `wallet` *only* supports relative paths.
+Once you have a password in hand, set rpcpassword= in /etc/akula/akula.conf
 
 For an example configuration file that describes the configuration settings,
-see `contrib/debian/examples/akula.conf`.
+see contrib/debian/examples/akula.conf.
 
 3. Paths
 ---------------------------------
 
-3a) Linux
-
 All three configurations assume several paths that might need to be adjusted.
 
-Binary:              `/usr/bin/akulad`  
-Configuration file:  `/etc/akulacore/akula.conf`  
-Data directory:      `/var/lib/akulad`  
-PID file:            `/var/run/akulad/akulad.pid` (OpenRC and Upstart) or `/var/lib/akulad/akulad.pid` (systemd)  
-Lock file:           `/var/lock/subsys/akulad` (CentOS)  
+Binary:              /usr/bin/akulad
+Configuration file:  /etc/akula/akula.conf
+Data directory:      /var/lib/akulad
+PID file:            /var/run/akulad/akulad.pid (OpenRC and Upstart)
+                     /var/lib/akulad/akulad.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the akulacore user and group.  It is advised for security
+should all be owned by the akula user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-akulacore user and group.  Access to akula-cli and other akulad rpc clients
+akula user and group.  Access to akula-cli and other akulad rpc clients
 can then be controlled by group membership.
-
-3b) Mac OS X
-
-Binary:              `/usr/local/bin/akulad`  
-Configuration file:  `~/Library/Application Support/AkulaCore/akula.conf`  
-Data directory:      `~/Library/Application Support/AkulaCore`
-Lock file:           `~/Library/Application Support/AkulaCore/.lock`
 
 4. Installing Service Configuration
 -----------------------------------
 
 4a) systemd
 
-Installing this .service file consists of just copying it to
+Installing this .service file consists on just copying it to
 /usr/lib/systemd/system directory, followed by the command
-`systemctl daemon-reload` in order to update running systemd configuration.
+"systemctl daemon-reload" in order to update running systemd configuration.
 
-To test, run `systemctl start akulad` and to enable for system startup run
-`systemctl enable akulad`
+To test, run "systemctl start akulad" and to enable for system startup run
+"systemctl enable akulad"
 
 4b) OpenRC
 
 Rename akulad.openrc to akulad and drop it in /etc/init.d.  Double
 check ownership and permissions and make it executable.  Test it with
-`/etc/init.d/akulad start` and configure it to run on startup with
-`rc-update add akulad`
+"/etc/init.d/akulad start" and configure it to run on startup with
+"rc-update add akulad"
 
 4c) Upstart (for Debian/Ubuntu based distributions)
 
-Drop akulad.conf in /etc/init.  Test by running `service akulad start`
+Drop akulad.conf in /etc/init.  Test by running "service akulad start"
 it will automatically start on reboot.
 
 NOTE: This script is incompatible with CentOS 5 and Amazon Linux 2014 as they
-use old versions of Upstart and do not supply the start-stop-daemon utility.
+use old versions of Upstart and do not supply the start-stop-daemon uitility.
 
 4d) CentOS
 
-Copy akulad.init to /etc/init.d/akulad. Test by running `service akulad start`.
+Copy akulad.init to /etc/init.d/akulad. Test by running "service akulad start".
 
 Using this script, you can adjust the path and flags to the akulad program by
 setting the AKLD and FLAGS environment variables in the file
 /etc/sysconfig/akulad. You can also use the DAEMONOPTS environment variable here.
-
-4e) Mac OS X
-
-Copy org.akula.akulad.plist into ~/Library/LaunchAgents. Load the launch agent by
-running `launchctl load ~/Library/LaunchAgents/org.akula.akulad.plist`.
-
-This Launch Agent will cause akulad to start whenever the user logs in.
-
-NOTE: This approach is intended for those wanting to run akulad as the current user.
-You will need to modify org.akula.akulad.plist if you intend to use it as a
-Launch Daemon with a dedicated akulacore user.
 
 5. Auto-respawn
 -----------------------------------

@@ -1,60 +1,62 @@
-Akula Core 0.12.1
+Akula Core
 =====================
 
-This is the official reference wallet for Akula digital currency and comprises the backbone of the Akula peer-to-peer network. You can [download Akula Core](https://www.akula.org/downloads/) or [build it yourself](#building) using the guides below.
+Setup
+---------------------
+[Akula Core]http://bit.akulas/ is the original AKL client and it builds the backbone of the network. However, it downloads and stores the entire history of AKL transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Akula on your native platform.
+The following are some helpful notes on how to run AKL on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/bitcoin-qt` (GUI) or
-- `bin/bitcoind` (headless)
+- bin/32/akula-qt (GUI, 32-bit) or bin/32/akulad (headless, 32-bit)
+- bin/64/akula-qt (GUI, 64-bit) or bin/64/akulad (headless, 64-bit)
 
 ### Windows
 
 Unpack the files into a directory, and then run akula-qt.exe.
 
-### OS X
+### OSX
 
-Drag Akula-Qt to your applications folder, and then run Akula-Qt.
+Drag AKL-Qt to your applications folder, and then run AKL-Qt.
 
-* Ask for help on [#akulacoin](http://webchat.freenode.net?channels=akulacoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=akulacoin).
-* Ask for help on the [AkulaTalk](https://akulatalk.org/) forums.
+### Need Help?
+
+* See the documentation at the [AKL Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+for help and more information.
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1604893.0) or on the [AKL Forum](https://google.forum.com/).
+* Join one of our Slack groups [AKL Slack Groups](https://google.slack.com/).
 
 Building
 ---------------------
-The following are developer notes on how to build Akula Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build AKL on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
-- [OS X Build Notes](build-osx.md)
+- [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
-- [Windows Build Notes](build-windows.md)
-- [OpenBSD Build Notes](build-openbsd.md)
 - [Gitian Building Guide](gitian-building.md)
 
 Development
 ---------------------
-The Akula Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The AKL repo's [root README](https://github.com/ALPHANODE/AKL/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- Source Code Documentation ***TODO***
+- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/) ***TODO***
 - [Translation Process](translation_process.md)
-- [Translation Strings Policy](translation_strings_policy.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
-- [Shared Libraries](shared-libraries.md)
-- [BIPS](bips.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [AkulaTalk](https://akulatalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#akulacoin](http://webchat.freenode.net/?channels=akulacoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=akulacoin).
+
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1604893.0) or the [AKL](https://google.forum.com/) forum.
+* Join the [AKL-Dev](https://google.slack.com/) 
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
@@ -64,6 +66,6 @@ The Akula Core repo's [root README](/README.md) contains relevant information on
 
 License
 ---------------------
-Distributed under the [MIT software license](http://www.opensource.org/licenses/mit-license.php).
+Distributed under the [MIT/X11 software license](http://www.opensource.org/licenses/mit-license.php).
 This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.
