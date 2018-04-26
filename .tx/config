@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[akula.qt-translation-012x]
+file_filter = src/qt/locale/akula_<lang>.ts
+source_file = src/qt/locale/akula_en.ts
+source_lang = en

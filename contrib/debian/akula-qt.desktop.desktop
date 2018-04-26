@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Akula
+Comment=Akula P2P Cryptocurrency
+Exec=akula-qt %u
+Terminal=false
+Type=Application
+Icon=akula128
+MimeType=x-scheme-handler/akula;
+Categories=Office;Finance;
+Name[en_US]=akula-qt.desktop

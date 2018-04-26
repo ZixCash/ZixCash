@@ -1,0 +1,22 @@
+[Unit]
+Description=Akula's distributed currency daemon
+After=network.target
+
+[Service]
+User=akulacore
+Group=akulacore
+
+Type=forking
+PIDFile=/var/lib/akulad/akulad.pid
+ExecStart=/usr/bin/akulad -daemon -pid=/var/lib/akulad/akulad.pid \
+-conf=/etc/akulacore/akula.conf -datadir=/var/lib/akulad -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

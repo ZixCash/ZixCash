@@ -1,0 +1,6 @@
+usr/local/bin/akula-qt usr/bin
+share/pixmaps/akula32.xpm usr/share/pixmaps
+share/pixmaps/akula16.xpm usr/share/pixmaps
+share/pixmaps/akula128.png usr/share/pixmaps
+debian/akula-qt.desktop usr/share/applications
+debian/akula-qt.protocol usr/share/kde4/services/

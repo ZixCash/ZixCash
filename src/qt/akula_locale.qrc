@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/akula_bg.qm</file>
+        <file alias="de">locale/akula_de.qm</file>
+        <file alias="en">locale/akula_en.qm</file>
+        <file alias="es">locale/akula_es.qm</file>
+        <file alias="fi">locale/akula_fi.qm</file>
+        <file alias="fr">locale/akula_fr.qm</file>
+        <file alias="it">locale/akula_it.qm</file>
+        <file alias="ja">locale/akula_ja.qm</file>
+        <file alias="pl">locale/akula_pl.qm</file>
+        <file alias="pt">locale/akula_pt.qm</file>
+        <file alias="ru">locale/akula_ru.qm</file>
+        <file alias="sk">locale/akula_sk.qm</file>
+        <file alias="sv">locale/akula_sv.qm</file>
+        <file alias="vi">locale/akula_vi.qm</file>
+        <file alias="zh_CN">locale/akula_zh_CN.qm</file>
+        <file alias="zh_TW">locale/akula_zh_TW.qm</file>
+    </qresource>
+</RCC>

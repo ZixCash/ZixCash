@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  akulad The Akula Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: akulad
+# processname: akulad
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/akulad, see below
+if [ -f /etc/sysconfig/akulad ]; then
+        . /etc/sysconfig/akulad
+fi
+
+RETVAL=0
+
+prog=akulad
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/akulad
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/akulad}
+
+# akulad defaults to /usr/bin/akulad, override with BITCOIND_BIN
+akulad=${BITCOIND_BIN-/usr/bin/akulad}
+
+# akulad opts default to -disablewallet, override with BITCOIND_OPTS
+akulad_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $akulad $akulad_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

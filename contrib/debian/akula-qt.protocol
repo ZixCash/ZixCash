@@ -1,0 +1,11 @@
+[Protocol]
+exec=akula-qt '%u'
+protocol=akula
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
