@@ -1,9 +1,9 @@
 Gitian building
 ================
 
-*Setup instructions for a gitian build of Akula using a Debian VM or physical system.*
+*Setup instructions for a gitian build of AKL using a Debian VM or physical system.*
 
-Gitian is the deterministic build process that is used to build the Akula
+Gitian is the deterministic build process that is used to build the AKL
 Core executables. It provides a way to be reasonably sure that the
 executables are really built from source on GitHub. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing gitian](#installing-gitian)
 - [Setting up gitian images](#setting-up-gitian-images)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Akula](#building-akula)
+- [Building AKL](#building-akula)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -281,7 +281,7 @@ Clone the git repositories for akula and gitian and then checkout the akula vers
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/ALPHANODE/Akula.git
+git clone https://github.com/jembem/akula.git
 cd akula
 git checkout v${VERSION}
 cd ..
@@ -303,7 +303,7 @@ Execute the following as user `debian`:
 
 ```bash
 cd gitian-builder
-bin/make-base-vm --lxc --arch amd64 --suite trusty
+bin/make-base-vm --lxc --arch amd64 --suite precise
 ```
 
 There will be a lot of warnings printed during build of the images. These can be ignored.
@@ -326,10 +326,10 @@ under 'Fetch and build inputs' to install sources which require manual intervent
 the next step: 'Seed the Gitian sources cache', which will fetch all necessary source files allowing
 for gitian to work offline.
 
-Building Akula
+Building AKL
 ----------------
 
-To build Akula (for Linux, OSX and Windows) just follow the steps under 'perform
+To build AKL (for Linux, OSX and Windows) just follow the steps under 'perform
 gitian builds' in [doc/release-process.md](release-process.md) in the akula repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
@@ -350,7 +350,7 @@ Output from `gbuild` will look something like
     remote: Total 35606 (delta 0), reused 0 (delta 0)
     Receiving objects: 100% (35606/35606), 26.52 MiB | 4.28 MiB/s, done.
     Resolving deltas: 100% (25724/25724), done.
-    From https://github.com/ALPHANODE/Akula
+    From https://github.com/jembem/akula
     ... (new tags, new branch etc)
     --- Building for precise x86_64 ---
     Stopping target if it is up
@@ -377,7 +377,7 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/ALPHANODE/Akula
+URL=https://github.com/jembem/akula
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
 ./bin/gbuild --commit akula=${COMMIT} --url akula=${URL} ../akula/contrib/gitian-descriptors/gitian-linux.yml
 ./bin/gbuild --commit akula=${COMMIT} --url akula=${URL} ../akula/contrib/gitian-descriptors/gitian-win.yml

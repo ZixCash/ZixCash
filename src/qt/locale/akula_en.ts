@@ -776,7 +776,7 @@
     <message>
         <location line="-413"/>
         <location line="+853"/>
-        <source>Akula Core</source>
+        <source>AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -801,12 +801,12 @@
     </message>
     <message>
         <location line="+29"/>
-        <source>&amp;About Akula Core</source>
+        <source>&amp;About AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Akula Core</source>
+        <source>Show information about AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,7 +871,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Akula Core help message to get a list with possible AKL command-line options</source>
+        <source>Show the AKL Core help message to get a list with possible AKL command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -881,7 +881,7 @@
     </message>
     <message>
         <location line="+147"/>
-        <source>Akula Core client</source>
+        <source>AKL Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -1517,7 +1517,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>Akula Core</source>
+        <source>AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1528,7 +1528,7 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>About Akula Core</source>
+        <source>About AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1586,17 +1586,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Akula Core.</source>
+        <source>Welcome to AKL Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Akula Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where AKL Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Akula Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>AKL Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1611,7 +1611,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+82"/>
-        <source>Akula Core</source>
+        <source>AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4024,7 +4024,7 @@ https://www.transifex.com/akula-project/akula-project-translations</source>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+43"/>
-        <source>Akula Core is shutting down...</source>
+        <source>AKL Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4219,7 +4219,7 @@ https://www.transifex.com/akula-project/akula-project-translations</source>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+37"/>
-        <source>Akula Core</source>
+        <source>AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4239,7 +4239,7 @@ https://www.transifex.com/akula-project/akula-project-translations</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The Akula Core developers</source>
+        <source>The AKL Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5033,7 +5033,7 @@ https://www.transifex.com/akula-project/akula-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot obtain a lock on data directory %s. Akula Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. AKL Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5258,7 +5258,7 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Akula Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. AKL Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5293,7 +5293,7 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Akula Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong AKL Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5333,8 +5333,8 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>(2214 could be used only on mainnet)</source>
-        <translation type="unfinished">(2214 could be used only on mainnet)</translation>
+        <source>(46782 could be used only on mainnet)</source>
+        <translation type="unfinished">(46782 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5348,7 +5348,7 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 2214 for mainnet)</source>
+        <source>(must be 46782 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5490,7 +5490,7 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Akula Core Developers</source>
+        <source>Copyright (C) 2015-%i The AKL Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5580,7 +5580,7 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Akula Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of AKL Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5720,7 +5720,7 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Akula Core is shutting down.</source>
+        <source>Initialization sanity check failed. AKL Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6440,7 +6440,7 @@ for example: alertnotify=echo %%s | mail -s &quot;AKL Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Akula Core to complete</source>
+        <source>Wallet needed to be rewritten: restart AKL Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

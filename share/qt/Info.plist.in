@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash and PIVX Core Developers, 2018-@COPYRIGHT_YEAR@ The Akula Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash and PIVX Core Developers, 2017-@COPYRIGHT_YEAR@ The AKL Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Akula-Qt</string>
+  <string>AKL-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.akula.Akula-Qt</string>
+  <string>io.akula.AKL-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.akula.AkulaPayment</string>
+      <string>io.akula.AKLPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>akula</string>
@@ -54,7 +54,7 @@
       <key>UTTypeIdentifier</key>
       <string>io.akula.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Akula payment request</string>
+      <string>AKL payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

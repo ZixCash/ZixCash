@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Akula developers
+// Copyright (c) 2015-2017 The AKL developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -900,8 +900,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         }
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (addr.GetPort() != 2214) return;
-        } else if (addr.GetPort() == 2214)
+            if (addr.GetPort() != 46782) return;
+        } else if (addr.GetPort() == 46782)
             return;
 
         //search existing Masternode list, this is where we update existing Masternodes with new dsee broadcasts

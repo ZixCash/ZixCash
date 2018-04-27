@@ -219,8 +219,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core
+        <source>AKL Core</source>
+        <translation>AKL Core
 </translation>
     </message>
     <message>
@@ -272,8 +272,8 @@
         <translation>Avsluta applikationen</translation>
     </message>
     <message>
-        <source>&amp;About Akula Core</source>
-        <translation>&amp;Om Akula Core</translation>
+        <source>&amp;About AKL Core</source>
+        <translation>&amp;Om AKL Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -412,8 +412,8 @@
         <translation>&amp;Kommandoradalternativ</translation>
     </message>
     <message>
-        <source>Show the Akula Core help message to get a list with possible AKL command-line options</source>
-        <translation>Visa Akula Core-hjälpmeddelandet för att få en lista med möjliga AKL-kommandoradalternativ</translation>
+        <source>Show the AKL Core help message to get a list with possible AKL command-line options</source>
+        <translation>Visa AKL Core-hjälpmeddelandet för att få en lista med möjliga AKL-kommandoradalternativ</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -883,8 +883,8 @@ Adress: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core
+        <source>AKL Core</source>
+        <translation>AKL Core
 </translation>
     </message>
     <message>
@@ -931,16 +931,16 @@ Adress: %4
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to Akula Core.</source>
-        <translation>Välkommen till Akula Core.</translation>
+        <source>Welcome to AKL Core.</source>
+        <translation>Välkommen till AKL Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Akula Core will store its data.</source>
-        <translation>Då detta är första gången programmet startas kan du välja var Akula Core ska lagra sin data.</translation>
+        <source>As this is the first time the program is launched, you can choose where AKL Core will store its data.</source>
+        <translation>Då detta är första gången programmet startas kan du välja var AKL Core ska lagra sin data.</translation>
     </message>
     <message>
-        <source>Akula Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Akula Core kommer att laddas ned och lagra en kopia av AKL:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
+        <source>AKL Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>AKL Core kommer att laddas ned och lagra en kopia av AKL:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1985,8 +1985,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Akula Core is shutting down...</source>
-        <translation>Akula Core stängs ned...</translation>
+        <source>AKL Core is shutting down...</source>
+        <translation>AKL Core stängs ned...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core
+        <source>AKL Core</source>
+        <translation>AKL Core
 </translation>
     </message>
     <message>
@@ -2140,8 +2140,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Bitcoin Core-utvecklarna</translation>
     </message>
     <message>
-        <source>The Akula Core developers</source>
-        <translation>Akula Core-utvecklarna</translation>
+        <source>The AKL Core developers</source>
+        <translation>AKL Core-utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2662,8 +2662,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Sammanbind till fastställd adress och avlyssna alltid den. Använd [host]:port-notation för IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Akula Core is probably already running.</source>
-        <translation>Kan inte erhålla ett lås på datakatalog %s. Akula Core körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. AKL Core is probably already running.</source>
+        <translation>Kan inte erhålla ett lås på datakatalog %s. AKL Core körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -2718,8 +2718,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Detta är en förhandsutgiven testkompilering - använd på egen risk - använd inte för utvinning eller handlarapplikationer.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Akula Core is probably already running.</source>
-        <translation>Det går inte att binda till %s till denna dator. Akula Core körs förmodligen redan.</translation>
+        <source>Unable to bind to %s on this computer. AKL Core is probably already running.</source>
+        <translation>Det går inte att binda till %s till denna dator. AKL Core körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
@@ -2942,8 +2942,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Akula Core is shutting down.</source>
-        <translation>Initialiseringstillståndkontroll misslyckades. Akula Core stängs ned.</translation>
+        <source>Initialization sanity check failed. AKL Core is shutting down.</source>
+        <translation>Initialiseringstillståndkontroll misslyckades. AKL Core stängs ned.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>

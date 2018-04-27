@@ -20,7 +20,7 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/ALPHANODE/AKL.git"
+- "url": "https://github.com/jembem/akula.git"
   "dir": "akula"
 files:
 - "raspberrypi-tools.tar.gz"

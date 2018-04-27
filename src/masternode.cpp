@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Akula developers
+// Copyright (c) 2015-2017 The AKL developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -517,8 +517,8 @@ bool CMasternodeBroadcast::CheckAndUpdate(int& nDos)
     }
 
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (addr.GetPort() != 2214) return false;
-    } else if (addr.GetPort() == 2214)
+        if (addr.GetPort() != 46782) return false;
+    } else if (addr.GetPort() == 46782)
         return false;
 
     //search existing Masternode list, this is where we update existing Masternodes with new mnb broadcasts

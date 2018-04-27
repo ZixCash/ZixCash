@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/ALPHANODE/AKL/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/jembem/akula/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,10 +24,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/ALPHANODE/AKL.SIGS.git
-    git clone https://github.com/ALPHANODE/AKL-DETACHED.SIGS.git
+    git clone https://github.com/jembem/akula.SIGS.git
+    git clone https://github.com/jembem/akula-DETACHED.SIGS.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/ALPHANODE/AKL.git
+    git clone https://github.com/jembem/akula.git
 
 ### AKL maintainers/release engineers, suggestion for writing release notes
 
@@ -97,7 +97,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Akula Core for Linux, Windows, and OS X:
+### Build and sign AKL Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
     ./bin/gbuild --memory 3000 --commit akula=v${VERSION} ../akula/contrib/gitian-descriptors/gitian-linux.yml

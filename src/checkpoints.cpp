@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Akula developers
+// Copyright (c) 2015-2017 The AKL developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -59,13 +59,13 @@ double GuessVerificationProgress(CBlockIndex* pindex, bool fSigchecks)
     if (pindex->nChainTx <= data.nTransactionsLastCheckpoint) {
         double nCheapBefore = pindex->nChainTx;
         double nCheapAfter = data.nTransactionsLastCheckpoint - pindex->nChainTx;
-        double nExpensiveAfter = (nNow - data.nTimeLastCheckpoint) / 86400.0 * data.fTransactionsPerDay;
+        double nExpensiveAfter = (nNow - data.nTimeLastCheckpoint) / 71300.0 * data.fTransactionsPerDay;
         fWorkBefore = nCheapBefore;
         fWorkAfter = nCheapAfter + nExpensiveAfter * fSigcheckVerificationFactor;
     } else {
         double nCheapBefore = data.nTransactionsLastCheckpoint;
         double nExpensiveBefore = pindex->nChainTx - data.nTransactionsLastCheckpoint;
-        double nExpensiveAfter = (nNow - pindex->GetBlockTime()) / 86400.0 * data.fTransactionsPerDay;
+        double nExpensiveAfter = (nNow - pindex->GetBlockTime()) / 71300.0 * data.fTransactionsPerDay;
         fWorkBefore = nCheapBefore + nExpensiveBefore * fSigcheckVerificationFactor;
         fWorkAfter = nExpensiveAfter * fSigcheckVerificationFactor;
     }

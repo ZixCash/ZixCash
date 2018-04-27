@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Akula developers
+// Copyright (c) 2015-2017 The AKL developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,7 +42,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "Akula cannot be compiled without assertions."
+#error "AKL cannot be compiled without assertions."
 #endif
 
 /**
@@ -96,7 +96,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Akula Signed Message:\n";
+const string strMessageMagic = "AKL Signed Message:\n";
 
 // Internal stuff
 namespace
@@ -1621,34 +1621,45 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight)
 {
 
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if (nHeight < 200 && nHeight > 0)
-            return 250000 * COIN;
-    }
 
-	if (nHeight == 0) return 100001 * COIN;
+      if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+          if (nHeight < 200 && nHeight > 0)
+              return 250000 * COIN;
+      }
 
-	int64_t nSubsidy;
+  	if (nHeight == 0) return 100001 * COIN;
 
-  if (nHeight == 1) {
-       return 1005000 * COIN;
-   }
-   else if (nHeight <= 4000){
-  nSubsidy = 10 * COIN;
-}
-else if (nHeight > 4000){
-nSubsidy = 7 * COIN;
-}
+  	int64_t nSubsidy;
+
+    if (nHeight == 1) {
+         return 1005000 * COIN;
+     }
+     else if (nHeight <= 4000){
+    nSubsidy = 5 * COIN;
+  }
+  else if (nHeight > 4000){
+  nSubsidy = 7 * COIN;
+  }
+      return nSubsidy;
 
 
-
-    return nSubsidy;
 
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
- return blockValue * 0.65;
+
+
+    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+        if (nHeight < 200)
+            return 0;
+    }
+    else{
+	int64_t ret = 0;
+    return blockValue * 0.65;
+  }
+
+
 }
 
 bool IsInitialBlockDownload()

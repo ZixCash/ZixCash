@@ -35,7 +35,7 @@
     <enum>QTabWidget::North</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="OrderBook">
     <attribute name="title">
@@ -443,10 +443,6 @@
      </property>
      <property name="text">
       <string>Buy AKL</string>
-     </property>
-     <property name="icon">
-      <iconset resource="../akula.qrc">
-       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -1752,10 +1748,6 @@
      </property>
      <property name="text">
       <string>Sell AKL</string>
-     </property>
-     <property name="icon">
-      <iconset resource="../akula">
-       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
     <widget class="QWidget" name="layoutWidget3">

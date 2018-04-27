@@ -1,7 +1,7 @@
 // Copyright (c) 2014 The Bitcoin Core developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Akula developers
+// Copyright (c) 2015-2017 The AKL developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@
 
 BOOST_AUTO_TEST_SUITE(main_tests)
 
-CAmount nMoneySupplyPoWEnd = 57879300 * COIN;
+CAmount nMoneySupplyPoWEnd = 1000000 * COIN;
 
 BOOST_AUTO_TEST_CASE(subsidy_limit_test)
 {
@@ -20,36 +20,36 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
     for (int nHeight = 0; nHeight < 1; nHeight += 1) {
         /* premine in block 1 */
         CAmount nSubsidy = GetBlockValue(nHeight);
-        BOOST_CHECK(nSubsidy <= 100001 * COIN);
+        BOOST_CHECK(nSubsidy <= 500001 * COIN);
         nSum += nSubsidy;
     }
 
-    for (int nHeight = 1; nHeight < 86400; nHeight += 1) {
+    for (int nHeight = 1; nHeight < 71300; nHeight += 1) {
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 200 * COIN);
         nSum += nSubsidy;
     }
-    for (int nHeight = 86400; nHeight < 151200; nHeight += 1) {
+    for (int nHeight = 71300; nHeight < 142200; nHeight += 1) {
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 150 * COIN);
         nSum += nSubsidy;
     }
-    for (int nHeight = 151200; nHeight < 302400; nHeight += 1) {
+    for (int nHeight = 142200; nHeight < 280300; nHeight += 1) {
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 125 * COIN);
         nSum += nSubsidy;
     }
-    for (int nHeight = 302400; nHeight < 345600; nHeight += 1) {
+    for (int nHeight = 280300; nHeight < 338600; nHeight += 1) {
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 100 * COIN);
         nSum += nSubsidy;
     }
-    for (int nHeight = 345600; nHeight < 388800; nHeight += 1) {
+    for (int nHeight = 338600; nHeight < 373800; nHeight += 1) {
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 75 * COIN);
         nSum += nSubsidy;
     }
-    for (int nHeight = 388800; nHeight < 475200; nHeight += 1) {
+    for (int nHeight = 373800; nHeight < 456300; nHeight += 1) {
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 50 * COIN);
         nSum += nSubsidy;

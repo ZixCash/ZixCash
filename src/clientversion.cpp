@@ -13,7 +13,7 @@
  * for both akulad and akula-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Akula Core");
+const std::string CLIENT_NAME("AKL Core");
 
 /**
  * Client version number

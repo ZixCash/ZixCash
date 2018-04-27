@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +283,12 @@
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>&amp;About Akula Core</source>
-        <translation>&amp;O Akula Core</translation>
+        <source>&amp;About AKL Core</source>
+        <translation>&amp;O AKL Core</translation>
     </message>
     <message>
-        <source>Show information about Akula Core</source>
-        <translation>Zobraziť informácie o Akula Core</translation>
+        <source>Show information about AKL Core</source>
+        <translation>Zobraziť informácie o AKL Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>Akula Core client</source>
-        <translation>Akula Core klient</translation>
+        <source>AKL Core client</source>
+        <translation>AKL Core klient</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Synchronizujú sa ďalšie dáta: %p%</translation>
     </message>
     <message>
-        <source>Show the Akula Core help message to get a list with possible AKL command-line options</source>
-        <translation>Zobraziť Akula Core nápovedu k získaniu zoznamu možností príkazového riadku AKL.</translation>
+        <source>Show the AKL Core help message to get a list with possible AKL command-line options</source>
+        <translation>Zobraziť AKL Core nápovedu k získaniu zoznamu možností príkazového riadku AKL.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -988,8 +988,8 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -1000,8 +1000,8 @@ Adresa: %4</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Akula Core</source>
-        <translation>O Akula Core</translation>
+        <source>About AKL Core</source>
+        <translation>O AKL Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1047,16 +1047,16 @@ Adresa: %4</translation>
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Akula Core.</source>
-        <translation>Vitajte v Akula Core.</translation>
+        <source>Welcome to AKL Core.</source>
+        <translation>Vitajte v AKL Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Akula Core will store its data.</source>
-        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude Akula Core ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where AKL Core will store its data.</source>
+        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude AKL Core ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>Akula Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Akula Core stiahne a uloží kópiu reťazca blokov AKL. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
+        <source>AKL Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>AKL Core stiahne a uloží kópiu reťazca blokov AKL. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1067,8 +1067,8 @@ Adresa: %4</translation>
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2585,7 +2585,7 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Akula Core is shutting down...</source>
+        <source>AKL Core is shutting down...</source>
         <translation>AKL core sa vypína...</translation>
     </message>
     <message>
@@ -2735,8 +2735,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2747,8 +2747,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-        <source>The Akula Core developers</source>
-        <translation>Vývojári Akula Core</translation>
+        <source>The AKL Core developers</source>
+        <translation>Vývojári AKL Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3325,8 +3325,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Akula Core is probably already running.</source>
-        <translation>Nedá sa zamknúť dátový adresár %s. Akula Core už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s. AKL Core is probably already running.</source>
+        <translation>Nedá sa zamknúť dátový adresár %s. AKL Core už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3381,8 +3381,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Toto je predbežná testovacia zostava - používate na vlastné riziko - nepoužívajte na ťaženie alebo obchodné aplikácie</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Akula Core is probably already running.</source>
-        <translation>Nedá sa viazať ku %s na tomto počítači. Akula Core už pravdepodobne beží.</translation>
+        <source>Unable to bind to %s on this computer. AKL Core is probably already running.</source>
+        <translation>Nedá sa viazať ku %s na tomto počítači. AKL Core už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
@@ -3745,8 +3745,8 @@ napríklad: alertnotify=echo %%s | mail -s "AKL Upozornenie" admin@foo.com
         <translation>Upozornenie: -maxtxfee je nastavené príliš vysoko! Takto vysoké poplatky by mali byť zaplatené za jednu transakciu.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Akula Core will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, Akula Core nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AKL Core will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, AKL Core nebude pracovať správne.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3757,8 +3757,8 @@ napríklad: alertnotify=echo %%s | mail -s "AKL Upozornenie" admin@foo.com
         <translation>Uzle na zoznam povolených nemôžu byť DoS zakázané a ich transakcie vždy postúpené ďalej, aj v prípade, ak sú už pamäťovej fronte. Užitočné napr. pre brány</translation>
     </message>
     <message>
-        <source>(2214 could be used only on mainnet)</source>
-        <translation>(2214 nemôže byť použité pre hlavnú sieť)</translation>
+        <source>(46782 could be used only on mainnet)</source>
+        <translation>(46782 nemôže byť použité pre hlavnú sieť)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3799,7 +3799,7 @@ napríklad: alertnotify=echo %%s | mail -s "AKL Upozornenie" admin@foo.com
         <translation>Autorské práva (C) 2009-%i Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Akula Core Developers</source>
+        <source>Copyright (C) 2014-%i The AKL Core Developers</source>
         <translation>Autorské práva (C) 2014-%i Vývojári jadra AKL</translation>
     </message>
     <message>
@@ -3831,8 +3831,8 @@ napríklad: alertnotify=echo %%s | mail -s "AKL Upozornenie" admin@foo.com
         <translation>Chyba pripojenia k Masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Akula Core</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Akula Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of AKL Core</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu AKL Core</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3903,8 +3903,8 @@ napríklad: alertnotify=echo %%s | mail -s "AKL Upozornenie" admin@foo.com
         <translation>Informácia</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Akula Core is shutting down.</source>
-        <translation>Inicializácia kontroly zdravia zlyhala. Akula Core sa vypína.</translation>
+        <source>Initialization sanity check failed. AKL Core is shutting down.</source>
+        <translation>Inicializácia kontroly zdravia zlyhala. AKL Core sa vypína.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4155,8 +4155,8 @@ napríklad: alertnotify=echo %%s | mail -s "AKL Upozornenie" admin@foo.com
         <translation>Použiť UPnP pre mapovanie počúvajúceho portu (predvolené: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Akula Core to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Akula Core</translation>
+        <source>Wallet needed to be rewritten: restart AKL Core to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte AKL Core</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
@@ -4175,7 +4175,7 @@ napríklad: alertnotify=echo %%s | mail -s "AKL Upozornenie" admin@foo.com
         <translation>Neplatný masternodeprivkey. Prosím pozrite do dokumentácie.</translation>
     </message>
     <message>
-        <source>(must be2214 for mainnet)</source>
+        <source>(must be44100 for mainnet)</source>
         <translation>(pre hlavnú sieť musí byť 9999)</translation>
     </message>
     <message>

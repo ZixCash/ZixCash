@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +283,12 @@
         <translation>Sulje ohjelma</translation>
     </message>
     <message>
-        <source>&amp;About Akula Core</source>
-        <translation>Tietoja &amp;Akula Core:sta</translation>
+        <source>&amp;About AKL Core</source>
+        <translation>Tietoja &amp;AKL Core:sta</translation>
     </message>
     <message>
-        <source>Show information about Akula Core</source>
-        <translation>Näytä tietoja Akula Core:sta</translation>
+        <source>Show information about AKL Core</source>
+        <translation>Näytä tietoja AKL Core:sta</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message>
-        <source>Akula Core client</source>
-        <translation>Akula Core asiakasohjelma</translation>
+        <source>AKL Core client</source>
+        <translation>AKL Core asiakasohjelma</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Synkronoidaan lisätietoja: %p%</translation>
     </message>
     <message>
-        <source>Show the Akula Core help message to get a list with possible AKL command-line options</source>
-        <translation>Näytä Akula Core ohjelista komentorivin valinnoista</translation>
+        <source>Show the AKL Core help message to get a list with possible AKL command-line options</source>
+        <translation>Näytä AKL Core ohjelista komentorivin valinnoista</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -989,8 +989,8 @@ Osoite: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -1001,8 +1001,8 @@ Osoite: %4
         <translation>(%1-bittinen)</translation>
     </message>
     <message>
-        <source>About Akula Core</source>
-        <translation>Tietoja Akula Core:sta</translation>
+        <source>About AKL Core</source>
+        <translation>Tietoja AKL Core:sta</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1048,17 +1048,17 @@ Osoite: %4
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Akula Core.</source>
-        <translation>Akula Core - Tervetuloa.</translation>
+        <source>Welcome to AKL Core.</source>
+        <translation>AKL Core - Tervetuloa.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Akula Core will store its data.</source>
-        <translation>Koska tämä on ensimmäinen kerta kun ohjelma käynnistetään, voit valita minne Akula Core tallettaa datansa.
+        <source>As this is the first time the program is launched, you can choose where AKL Core will store its data.</source>
+        <translation>Koska tämä on ensimmäinen kerta kun ohjelma käynnistetään, voit valita minne AKL Core tallettaa datansa.
 Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd levyltä, ohjaa talletettava data eri levyasemalle turvalliseen paikkaan.</translation>
     </message>
     <message>
-        <source>Akula Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Akula Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
+        <source>AKL Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>AKL Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1069,8 +1069,8 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
         <translation>Määritä oma hakemisto:</translation>
     </message>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2591,8 +2591,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Akula Core is shutting down...</source>
-        <translation>Akula Core sulkeutuu...</translation>
+        <source>AKL Core is shutting down...</source>
+        <translation>AKL Core sulkeutuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2741,8 +2741,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2753,8 +2753,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Bitcoin Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Akula Core developers</source>
-        <translation>Akula Core kehittäjät</translation>
+        <source>The AKL Core developers</source>
+        <translation>AKL Core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3331,8 +3331,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:port merkintätapaa IPv6:lle.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Akula Core is probably already running.</source>
-        <translation>Ei voida lukita data hakemistoa %s. Akula Core on luultavasti jo käynnissä.</translation>
+        <source>Cannot obtain a lock on data directory %s. AKL Core is probably already running.</source>
+        <translation>Ei voida lukita data hakemistoa %s. AKL Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3387,8 +3387,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Tämä on esi-julkaistu testiversio - Käytä omalla vastuulla - Älä käytä louhimiseen tai kauppasovelluksiin.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Akula Core is probably already running.</source>
-        <translation>Ei voida yhdistää %s tässä tietokoneessa. Akula Core on luultavasti jo käynnissä.</translation>
+        <source>Unable to bind to %s on this computer. AKL Core is probably already running.</source>
+        <translation>Ei voida yhdistää %s tässä tietokoneessa. AKL Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
@@ -3753,7 +3753,7 @@ esimerkiksi: alertnotify=echo %%s | mail -s "AKL Hälytys" admin@foo.com
         <translation>Varoitus: -maxtxfee on asetettu erittäin korkeaksi! Näin isot siirtomaksut voitaisiin maksaa yhdessä siirtotapahtumassa.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Akula Core will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AKL Core will not work properly.</source>
         <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat oikein! AKL ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
     </message>
     <message>
@@ -3765,8 +3765,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "AKL Hälytys" admin@foo.com
         <translation>Luotettaviksi merkittyjä peers:ejä ei voida DoS estää, ja niiden siirtotapahtumat välitetään aina, vaikka ne olisvatkin jo muistivarannossa, käyttökelpoinen esim. yhdyskäytävään</translation>
     </message>
     <message>
-        <source>(2214 could be used only on mainnet)</source>
-        <translation>(2214 voidaan käyttää vain pääverkossa)</translation>
+        <source>(46782 could be used only on mainnet)</source>
+        <translation>(46782 voidaan käyttää vain pääverkossa)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3807,8 +3807,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "AKL Hälytys" admin@foo.com
         <translation>Copyright (C) 2009-%i Bitcoin Core Kehittäjät</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Akula Core Developers</source>
-        <translation>Copyright (C) 2014-%i Akula Core Kehittäjät</translation>
+        <source>Copyright (C) 2014-%i The AKL Core Developers</source>
+        <translation>Copyright (C) 2014-%i AKL Core Kehittäjät</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3839,8 +3839,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "AKL Hälytys" admin@foo.com
         <translation>Virhe masternode:en kytkeytymisessä.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Akula Core</source>
-        <translation>Virhe ladattaessa wallet.dat: Lompakko vaatii uudemman version Akula Core:sta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of AKL Core</source>
+        <translation>Virhe ladattaessa wallet.dat: Lompakko vaatii uudemman version AKL Core:sta</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3911,8 +3911,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "AKL Hälytys" admin@foo.com
         <translation>Tietoa</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Akula Core is shutting down.</source>
-        <translation>Alkuperäisyyden tarkistus epäonnistui. Akula Core sulkeutuu.</translation>
+        <source>Initialization sanity check failed. AKL Core is shutting down.</source>
+        <translation>Alkuperäisyyden tarkistus epäonnistui. AKL Core sulkeutuu.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4163,8 +4163,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "AKL Hälytys" admin@foo.com
         <translation>Käytä UPnP:tä kuunneltavan portin kartoitukseen (oletus: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Akula Core to complete</source>
-        <translation>Lompakko on kirjoitettava uudelleen: käynnistä Akula Core uudestaan viimeistelyä varten</translation>
+        <source>Wallet needed to be rewritten: restart AKL Core to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä AKL Core uudestaan viimeistelyä varten</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
@@ -4183,8 +4183,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "AKL Hälytys" admin@foo.com
         <translation>Virheellinen masternoden yksityisavain (masternodeprivkey). Katso lisätietoja dokumentaatiosta.</translation>
     </message>
     <message>
-        <source>(must be2214 for mainnet)</source>
-        <translation>(oltava2214 pääverkossa)</translation>
+        <source>(must be44100 for mainnet)</source>
+        <translation>(oltava44100 pääverkossa)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>

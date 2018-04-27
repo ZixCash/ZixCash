@@ -1,4 +1,4 @@
-Name "Akula Core (-bit)"
+Name "AKL Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 2.0.0
-!define COMPANY "Akula Core project"
+!define COMPANY "AKL Core project"
 !define URL http://bit.akulas/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/root/AKL/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/AKL/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/wdz/akula/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/wdz/akula/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/root/AKL/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/wdz/akula/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Akula Core"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "AKL Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\akula-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/AKL/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/wdz/akula/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/AKL/akula-${VERSION}-win-setup.exe
+OutFile /home/wdz/akula/akula-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\AKL
 !else
@@ -59,7 +59,7 @@ XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.3
-VIAddVersionKey ProductName "Akula Core"
+VIAddVersionKey ProductName "AKL Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/AKL/release/akula-qt.exe
-    File /oname=COPYING.txt /root/AKL/COPYING
-    File /oname=readme.txt /root/AKL/doc/README_windows.txt
+    File /home/wdz/akula/release/akula-qt.exe
+    File /oname=COPYING.txt /home/wdz/akula/COPYING
+    File /oname=readme.txt /home/wdz/akula/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/AKL/release/akulad.exe
-    File /root/AKL/release/akula-cli.exe
+    File /home/wdz/akula/release/akulad.exe
+    File /home/wdz/akula/release/akula-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /root/AKL/doc\*.*
+    File /r /home/wdz/akula/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 

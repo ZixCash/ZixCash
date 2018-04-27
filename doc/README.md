@@ -1,9 +1,9 @@
-Akula Core
+AKL Core
 =====================
 
 Setup
 ---------------------
-[Akula Core]http://bit.akulas/ is the original AKL client and it builds the backbone of the network. However, it downloads and stores the entire history of AKL transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[AKL Core]http://bit.akulas/ is the original AKL client and it builds the backbone of the network. However, it downloads and stores the entire history of AKL transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -41,7 +41,7 @@ The following are developer notes on how to build AKL on your native platform. T
 
 Development
 ---------------------
-The AKL repo's [root README](https://github.com/ALPHANODE/AKL/blob/master/README.md) contains relevant information on the development process and automated testing.
+The AKL repo's [root README](https://github.com/jembem/akula/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

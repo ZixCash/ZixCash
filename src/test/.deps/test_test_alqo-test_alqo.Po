@@ -1,4 +1,4 @@
-test/test_test_akula-test_akula.o: test/test_akula.cpp \
+test/test_test_alqo-test_alqo.o: test/test_alqo.cpp \
  /usr/include/stdc-predef.h main.h config/akula-config.h amount.h \
  serialize.h /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \

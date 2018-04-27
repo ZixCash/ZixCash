@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/ALPHANODE/AKL.SIGS.git"
+- "url": "https://github.com/jembem/akula.SIGS.git"
   "dir": "signature"
 files:
 - "akula-osx-unsigned.tar.gz"

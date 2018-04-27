@@ -1,45 +1,22 @@
-Anonymized transactions using coin mixing technology. 1-Second-Transactions. Network stability with masternodes, each is secured with a collateral of 10.000 AKL.
+AKL is a 3rd Generation Crypto Currency which offers Instant and Anonymous Transactions. A form of digital currency secured by cryptography and issued through a decentralized and advanced mining market.<Br><br>
 
-For further information visit us at [akula.org](https://akula.org/) or visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=3133202.0)
+◆  Algorithm: Quark<br>
+◆  Block Time: 1 min<br>
+◆  Block Maturity for mined blocks:100<br>
+◆  Reward distribution<br>
 
-# Coin Specs
+First 200 blocks - 1 AKL Coin<br>
+Block 200 - 71300 = 200 Coins per block / 75 % POW Miners / 25 % Masternodes<br>
+Block 71300 - 142200 = 150 Coins per block / 70 % POW Miners / 30 % Masternodes<br>
+Block 142200 - 280300 = 125 Coins per block / 65 % POW Miners / 35 % Masternodes<br>
+Block 280300 - 338600 = 100 Coins per block / 60 % POW Miners / 40 % Masternodes<br>
+Block 338600 - 373800 = 75 Coins per block / 55 % POW Miners / 45 % Masternodes<br>
+Block 373800 - 456300 = 50 Coins per block / 50 % POW Miners / 40 % Masternodes / 456300 is the LAST POW Block and POS is activated<br>
+Block 456300 - 513300 = 50 Coins per block / 35 % POS Miners / 65 % Masternodes <br>
+Block 513300 - 573100 = 25 Coins per block / 35 % POS Miners / 65 % Masternodes <br>
+Block 573100 - 623100 = 10 Coins per block / 35 % POS Miners / 65 % Masternodes <br>
+Block >623100 = 5 Coins per block / 35 % POS Miners / 65 % Masternodes <br><br>
 
-• PoW Algorithm: Quark  
-• Premine: (#1 Block) 100,001 AKL (0,17% of PoW)  
-• PoW Blocks: 2 - 475200  
-• PoS Blocks: Starting from 475201  
-• Block Time: 60 Seconds  
-• PoW Max Coin Output/Supply: 57,879,300  
-• PoW Ending: ~ ca. 330 Days (Estimated: Feb 2019)  
-• Masternode Requirements: 10,000 AKL  
-• Maturity: 111 Confirmations  
-
-# PoW Reward Distribution
-
-_Proof of Work block rewards, masternode reward allocation starting at the 13th March 2018_
-<table>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th></tr>
-<tr><td>Block 2 - 86400</td><td>200 AKL</td><td>   Masternodes 20%</td><td>Miners 80%</td></tr>
-<tr><td>Block 86401 - 151200</td><td>150 AKL</td><td>  Masternodes 25%</td><td>Miners 75%</td></tr>
-<tr><td>Block 151201 - 302400</td><td>125 AKL</td><td>  Masternodes 30%</td><td>Miners 70%</td></tr>
-<tr><td>Block 302401 - 345600</td><td>100 AKL</td><td>   Masternodes 35%</td><td>Miners 65%</td></tr>
-<tr><td>Block 345601 - 388800</td><td>75 AKL</td><td>      Masternodes 40%</td><td>Miners 60%</td></tr>
-<tr><td>Block 388801 - 475200</td><td>50 AKL</td><td>      Masternodes 40%</td><td>Miners 60%</td></tr>
-</table>
-
-Masternode and staker rewards with PoS:
-Masternodes and stakers will receive split reward allocation when PoS sets in.
-
-# PoS Block Rewards
-
-_Proof of Stake will automatically be enabled at block 475201._
-<table>
-<tr><th>Block Height</th><th>Reward Amount</th>                  
-<tr><td>Block 475201 - 518400</td><td>50 AKL</td></tr>
-<tr><td>Block 518401 - 561600</td><td>25 AKL</td></tr>
-<tr><td>Block 561601 - 604800</td><td>10 AKL</td></tr>
-<tr><td>Block 604801 - infinite</td><td>5 AKL</td></tr>
-</table>
-
-
-# Further information
+◆  Instant send: ~5 seconds<br>
+◆  Difficulty retargeting: Dark Gravity Wave<br>
+◆  Transaction anonymity: Private send Implementation<br>

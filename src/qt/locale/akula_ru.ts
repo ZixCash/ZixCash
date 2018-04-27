@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +283,12 @@
         <translation>Закрыть приложение</translation>
     </message>
     <message>
-        <source>&amp;About Akula Core</source>
-        <translation>О &amp;Akula Core</translation>
+        <source>&amp;About AKL Core</source>
+        <translation>О &amp;AKL Core</translation>
     </message>
     <message>
-        <source>Show information about Akula Core</source>
-        <translation>Показать информацию о Akula Core</translation>
+        <source>Show information about AKL Core</source>
+        <translation>Показать информацию о AKL Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>&amp;Параметры командной строки</translation>
     </message>
     <message>
-        <source>Akula Core client</source>
-        <translation>Клиент Akula Core</translation>
+        <source>AKL Core client</source>
+        <translation>Клиент AKL Core</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Синхронизация дополнительных данных: %p%</translation>
     </message>
     <message>
-        <source>Show the Akula Core help message to get a list with possible AKL command-line options</source>
-        <translation>Показать помощь о Akula Core со списком возможных параметров командной строки</translation>
+        <source>Show the AKL Core help message to get a list with possible AKL command-line options</source>
+        <translation>Показать помощь о AKL Core со списком возможных параметров командной строки</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -989,8 +989,8 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -1001,8 +1001,8 @@ Address: %4
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Akula Core</source>
-        <translation>О Akula Core</translation>
+        <source>About AKL Core</source>
+        <translation>О AKL Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1048,16 +1048,16 @@ Address: %4
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Akula Core.</source>
-        <translation>Добро пожаловать в Akula Core.</translation>
+        <source>Welcome to AKL Core.</source>
+        <translation>Добро пожаловать в AKL Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Akula Core will store its data.</source>
-        <translation>Так как вы впервые запустили программу, вы можете выбрать, где Akula Core будет хранить данные.</translation>
+        <source>As this is the first time the program is launched, you can choose where AKL Core will store its data.</source>
+        <translation>Так как вы впервые запустили программу, вы можете выбрать, где AKL Core будет хранить данные.</translation>
     </message>
     <message>
-        <source>Akula Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Akula Core скачает и сохранит копию цепочки блоков. Как минимум %1ГБ данных будет храниться в этом каталоге и размер данных будет со временем расти. В этом же каталоге будет сохранён кошелёк.</translation>
+        <source>AKL Core will download and store a copy of the AKL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>AKL Core скачает и сохранит копию цепочки блоков. Как минимум %1ГБ данных будет храниться в этом каталоге и размер данных будет со временем расти. В этом же каталоге будет сохранён кошелёк.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1068,8 +1068,8 @@ Address: %4
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2586,8 +2586,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Akula Core is shutting down...</source>
-        <translation>Akula Core выключается...</translation>
+        <source>AKL Core is shutting down...</source>
+        <translation>AKL Core выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2736,8 +2736,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Akula Core</source>
-        <translation>Akula Core</translation>
+        <source>AKL Core</source>
+        <translation>AKL Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2748,8 +2748,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Разработчики Bitcoin Core</translation>
     </message>
     <message>
-        <source>The Akula Core developers</source>
-        <translation>Разработчики Akula Core</translation>
+        <source>The AKL Core developers</source>
+        <translation>Разработчики AKL Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3326,8 +3326,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Привязаться к указанному адресу и всегда прослушивать только его. Используйте [хост]:порт для IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Akula Core is probably already running.</source>
-        <translation>Не удалось установить блокировку на каталог данных %s. Возможно, Akula Core уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. AKL Core is probably already running.</source>
+        <translation>Не удалось установить блокировку на каталог данных %s. Возможно, AKL Core уже запущен.</translation>
     </message>
     <message>
         <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3382,8 +3382,8 @@ https://www.transifex.com/akula-crypto/akula-wallet-translations/</translation>
         <translation>Это пре-релизная тестовая сборка - используйте на свой страх и риск - не используйте для добычи или торговых приложений</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Akula Core is probably already running.</source>
-        <translation>Не удалось привязаться к %s на этом компьютере. Возможно, Akula Core уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. AKL Core is probably already running.</source>
+        <translation>Не удалось привязаться к %s на этом компьютере. Возможно, AKL Core уже запущен.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
@@ -3746,8 +3746,8 @@ rpcpassword=%s
         <translation>Внимание: установлено очень большое значение -paytxfee! Комиссия такого размера может быть уплачена при проведении одельной транзакции.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Akula Core will not work properly.</source>
-        <translation>Внимание: пожалуйста, убедитесь что дата и время на Вашем компьютере выставлены правильно! Akula Core не сможет работать корректно, если часы настроены неверно.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AKL Core will not work properly.</source>
+        <translation>Внимание: пожалуйста, убедитесь что дата и время на Вашем компьютере выставлены правильно! AKL Core не сможет работать корректно, если часы настроены неверно.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3758,8 +3758,8 @@ rpcpassword=%s
         <translation>Пиры, внесенные в белый список, не будут подвергаться DoS блокировкам и их транзакции будут ретранслироваться, даже если они уже есть в пуле памяти, что полезно, например, для работы в качестве шлюза</translation>
     </message>
     <message>
-        <source>(2214 could be used only on mainnet)</source>
-        <translation>(2214 можно использовать только в главной сети)</translation>
+        <source>(46782 could be used only on mainnet)</source>
+        <translation>(46782 можно использовать только в главной сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3800,8 +3800,8 @@ rpcpassword=%s
         <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Akula Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Akula Core Developers</translation>
+        <source>Copyright (C) 2014-%i The AKL Core Developers</source>
+        <translation>Copyright (C) 2014-%i The AKL Core Developers</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3832,8 +3832,8 @@ rpcpassword=%s
         <translation>Ошибка соединения с мастернодой.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Akula Core</source>
-        <translation>Ошибка загрузки wallet.dat: кошелёк требует более новой версии Akula Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of AKL Core</source>
+        <translation>Ошибка загрузки wallet.dat: кошелёк требует более новой версии AKL Core</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3904,8 +3904,8 @@ rpcpassword=%s
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Akula Core is shutting down.</source>
-        <translation>Проверка на непротиворечивость закончилась неудачно. Akula Core выключается.</translation>
+        <source>Initialization sanity check failed. AKL Core is shutting down.</source>
+        <translation>Проверка на непротиворечивость закончилась неудачно. AKL Core выключается.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4156,8 +4156,8 @@ rpcpassword=%s
         <translation>Использовать UPnP для проброса порта (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Akula Core to complete</source>
-        <translation>Необходимо перезаписать кошелёк: перезапустите Akula Core для завершения операции</translation>
+        <source>Wallet needed to be rewritten: restart AKL Core to complete</source>
+        <translation>Необходимо перезаписать кошелёк: перезапустите AKL Core для завершения операции</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
@@ -4176,8 +4176,8 @@ rpcpassword=%s
         <translation>Неправильное значение masternodeprivkey. Пожалуйста, ознакомьтесь с документацией.</translation>
     </message>
     <message>
-        <source>(must be2214 for mainnet)</source>
-        <translation>(должно быть2214 в главной сети)</translation>
+        <source>(must be44100 for mainnet)</source>
+        <translation>(должно быть46782 в главной сети)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
