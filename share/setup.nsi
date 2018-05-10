@@ -1,4 +1,4 @@
-Name "AKL Core (-bit)"
+Name "ZIX Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 2.0.0
-!define COMPANY "AKL Core project"
-!define URL http://bit.akulas/
+!define COMPANY "ZIX Core project"
+!define URL http://bit.zixcashs/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/wdz/akula/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/wdz/akula/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/wdz/zixcash/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/wdz/zixcash/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/wdz/akula/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/wdz/zixcash/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "AKL Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\akula-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "ZIX Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\zixcash-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/wdz/akula/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/wdz/zixcash/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/wdz/akula/akula-${VERSION}-win-setup.exe
+OutFile /home/wdz/zixcash/zixcash-${VERSION}-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\AKL
+InstallDir $PROGRAMFILES64\ZIX
 !else
-InstallDir $PROGRAMFILES\AKL
+InstallDir $PROGRAMFILES\ZIX
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.3
-VIAddVersionKey ProductName "AKL Core"
+VIAddVersionKey ProductName "ZIX Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,19 +73,19 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/wdz/akula/release/akula-qt.exe
-    File /oname=COPYING.txt /home/wdz/akula/COPYING
-    File /oname=readme.txt /home/wdz/akula/doc/README_windows.txt
+    File /home/wdz/zixcash/release/zixcash-qt.exe
+    File /oname=COPYING.txt /home/wdz/zixcash/COPYING
+    File /oname=readme.txt /home/wdz/zixcash/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/wdz/akula/release/akulad.exe
-    File /home/wdz/akula/release/akula-cli.exe
+    File /home/wdz/zixcash/release/zixcashd.exe
+    File /home/wdz/zixcash/release/zixcash-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /home/wdz/akula/doc\*.*
+    File /r /home/wdz/zixcash/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
-    # Remove old wxwidgets-based-akula executable and locales:
-    Delete /REBOOTOK $INSTDIR\akula.exe
+    # Remove old wxwidgets-based-zixcash executable and locales:
+    Delete /REBOOTOK $INSTDIR\zixcash.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
@@ -95,7 +95,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\akula-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\zixcash-qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -106,10 +106,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "akula" "URL Protocol" ""
-    WriteRegStr HKCR "akula" "" "URL:AKL"
-    WriteRegStr HKCR "akula\DefaultIcon" "" $INSTDIR\akula-qt.exe
-    WriteRegStr HKCR "akula\shell\open\command" "" '"$INSTDIR\akula-qt.exe" "%1"'
+    WriteRegStr HKCR "zixcash" "URL Protocol" ""
+    WriteRegStr HKCR "zixcash" "" "URL:ZIX"
+    WriteRegStr HKCR "zixcash\DefaultIcon" "" $INSTDIR\zixcash-qt.exe
+    WriteRegStr HKCR "zixcash\shell\open\command" "" '"$INSTDIR\zixcash-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -127,7 +127,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\akula-qt.exe
+    Delete /REBOOTOK $INSTDIR\zixcash-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -139,7 +139,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\AKL.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\ZIX.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -147,7 +147,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "akula"
+    DeleteRegKey HKCR "zixcash"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

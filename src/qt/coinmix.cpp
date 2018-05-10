@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2015-2017 The AKL developers
+// Copyright (c) 2015-2017 The ZIX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -34,7 +34,7 @@ class TxViewDelegate2 : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate2() : QAbstractItemDelegate(), unit(BitcoinUnits::AKL)
+    TxViewDelegate2() : QAbstractItemDelegate(), unit(BitcoinUnits::ZIX)
     {
     }
 
@@ -275,7 +275,7 @@ void Coinmix::setWalletModel(WalletModel* model)
         //connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("AKL")
+    // update the display unit, to not use the default ("ZIX")
     //updateDisplayUnit();
 }
 
@@ -320,15 +320,15 @@ void Coinmix::updateDarksendProgress()
     if (!pwalletMain) return;
 
     QString strAmountAndRounds;
-    QString strAnonymizeAKLAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeAKLAmount * COIN, false, BitcoinUnits::separatorAlways);
+    QString strAnonymizeZIXAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeZIXAmount * COIN, false, BitcoinUnits::separatorAlways);
 
     if (currentBalance == 0) {
         ui->DarksendProgress->setValue(0);
         ui->DarksendProgress->setToolTip(tr("No inputs detected"));
 
         // when balance is zero just show info from settings
-        strAnonymizeAKLAmount = strAnonymizeAKLAmount.remove(strAnonymizeAKLAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeAKLAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
+        strAnonymizeZIXAmount = strAnonymizeZIXAmount.remove(strAnonymizeZIXAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeZIXAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
 
         ui->labelAmountRounds->setToolTip(tr("No inputs detected"));
         ui->labelAmountRounds->setText(strAmountAndRounds);
@@ -355,20 +355,20 @@ void Coinmix::updateDarksendProgress()
     CAmount nMaxToAnonymize = nAnonymizableBalance + currentAnonymizedBalance + nDenominatedUnconfirmedBalance;
 
     // If it's more than the anon threshold, limit to that.
-    if (nMaxToAnonymize > nAnonymizeAKLAmount * COIN) nMaxToAnonymize = nAnonymizeAKLAmount * COIN;
+    if (nMaxToAnonymize > nAnonymizeZIXAmount * COIN) nMaxToAnonymize = nAnonymizeZIXAmount * COIN;
 
     if (nMaxToAnonymize == 0) return;
 
-    if (nMaxToAnonymize >= nAnonymizeAKLAmount * COIN) {
+    if (nMaxToAnonymize >= nAnonymizeZIXAmount * COIN) {
         ui->labelAmountRounds->setToolTip(tr("Found enough compatible inputs to anonymize %1")
-                                              .arg(strAnonymizeAKLAmount));
-        strAnonymizeAKLAmount = strAnonymizeAKLAmount.remove(strAnonymizeAKLAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeAKLAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
+                                              .arg(strAnonymizeZIXAmount));
+        strAnonymizeZIXAmount = strAnonymizeZIXAmount.remove(strAnonymizeZIXAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeZIXAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
     } else {
         QString strMaxToAnonymize = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nMaxToAnonymize, false, BitcoinUnits::separatorAlways);
         ui->labelAmountRounds->setToolTip(tr("Not enough compatible inputs to anonymize <span style='color:red;'>%1</span>,<br>"
                                              "will anonymize <span style='color:red;'>%2</span> instead")
-                                              .arg(strAnonymizeAKLAmount)
+                                              .arg(strAnonymizeZIXAmount)
                                               .arg(strMaxToAnonymize));
         strMaxToAnonymize = strMaxToAnonymize.remove(strMaxToAnonymize.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
         strAmountAndRounds = "<span style='color:red;'>" +
@@ -539,7 +539,7 @@ void Coinmix::toggleDarksend()
 
         //show Darksend configuration if client has defaults set 
 
-        if (nAnonymizeAKLAmount == 0) {
+        if (nAnonymizeZIXAmount == 0) {
             DarksendConfig dlg(this);
             dlg.setModel(walletModel);
             dlg.exec();

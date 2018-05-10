@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2015-2017 The AKL developers
+// Copyright (c) 2015-2017 The ZIX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -107,8 +107,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 2 * 60; // AKL: 1 day
-        nTargetSpacing = 2 * 60;  // AKL: 1 minute
+        nTargetTimespan = 2 * 60; // ZIX: 1 day
+        nTargetSpacing = 2 * 60;  // ZIX: 1 minute
         nLastPOWBlock = 4000;
         nMaturity = 7;
         nMasternodeCountDrift = 20;
@@ -198,8 +198,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // AKL: 1 day
-        nTargetSpacing = 1 * 60;  // AKL: 1 minute
+        nTargetTimespan = 1 * 60; // ZIX: 1 day
+        nTargetSpacing = 1 * 60;  // ZIX: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
@@ -226,11 +226,11 @@ public:
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);
-        // Testnet AKL BIP32 pubkeys start with 'DRKV'
+        // Testnet ZIX BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet AKL BIP32 prvkeys start with 'DRKP'
+        // Testnet ZIX BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet AKL BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet ZIX BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -278,8 +278,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // AKL: 1 day
-        nTargetSpacing = 1 * 60;        // AKL: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // ZIX: 1 day
+        nTargetSpacing = 1 * 60;        // ZIX: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1519391420;
         genesis.nBits = 0x1e0ffff0;

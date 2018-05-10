@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/jembem/akula/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/jembem/zixcash/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/jembem/akula.SIGS.git
-    git clone https://github.com/jembem/akula-DETACHED.SIGS.git
+    git clone https://github.com/jembem/zixcash.SIGS.git
+    git clone https://github.com/jembem/zixcash-DETACHED.SIGS.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/jembem/akula.git
+    git clone https://github.com/jembem/zixcash.git
 
-### AKL maintainers/release engineers, suggestion for writing release notes
+### ZIX maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./akula
+    pushd ./zixcash
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../akula/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../zixcash/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,50 +92,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url akula=/path/to/akula,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url zixcash=/path/to/zixcash,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign AKL Core for Linux, Windows, and OS X:
+### Build and sign ZIX Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit akula=v${VERSION} ../akula/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/akula-*.tar.gz build/out/src/akula-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit zixcash=v${VERSION} ../zixcash/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/zixcash-*.tar.gz build/out/src/zixcash-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit akula=v${VERSION} ../akula/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/akula-*-win-unsigned.tar.gz inputs/akula-win-unsigned.tar.gz
-    mv build/out/akula-*.zip build/out/akula-*.exe ../
+    ./bin/gbuild --memory 3000 --commit zixcash=v${VERSION} ../zixcash/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/zixcash-*-win-unsigned.tar.gz inputs/zixcash-win-unsigned.tar.gz
+    mv build/out/zixcash-*.zip build/out/zixcash-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit akula=v${VERSION} ../akula/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/akula-*-osx-unsigned.tar.gz inputs/akula-osx-unsigned.tar.gz
-    mv build/out/akula-*.tar.gz build/out/akula-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit zixcash=v${VERSION} ../zixcash/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/zixcash-*-osx-unsigned.tar.gz inputs/zixcash-osx-unsigned.tar.gz
+    mv build/out/zixcash-*.tar.gz build/out/zixcash-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`akula-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`akula-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`akula-${VERSION}-win[32|64]-setup-unsigned.exe`, `akula-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`akula-${VERSION}-osx-unsigned.dmg`, `akula-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`zixcash-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`zixcash-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`zixcash-${VERSION}-win[32|64]-setup-unsigned.exe`, `zixcash-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`zixcash-${VERSION}-osx-unsigned.dmg`, `zixcash-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import akula/contrib/gitian-keys/*.pgp
+    gpg --import zixcash/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../akula/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../akula/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../akula/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../zixcash/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../zixcash/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../zixcash/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -156,22 +156,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer akula-osx-unsigned.tar.gz to osx for signing
-    tar xf akula-osx-unsigned.tar.gz
+    transfer zixcash-osx-unsigned.tar.gz to osx for signing
+    tar xf zixcash-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf akula-win-unsigned.tar.gz
+    tar xf zixcash-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/akula-detached-sigs
+    cd ~/zixcash-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -184,25 +184,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [akula-detached-sigs](https://github.com/AKL-Project/akula-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [zixcash-detached-sigs](https://github.com/ZIX-Project/zixcash-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../akula/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../akula/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/akula-osx-signed.dmg ../akula-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../zixcash/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../zixcash/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/zixcash-osx-signed.dmg ../zixcash-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../akula/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../akula/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/akula-*win64-setup.exe ../akula-${VERSION}-win64-setup.exe
-    mv build/out/akula-*win32-setup.exe ../akula-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../zixcash/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../zixcash/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/zixcash-*win64-setup.exe ../zixcash-${VERSION}-win64-setup.exe
+    mv build/out/zixcash-*win32-setup.exe ../zixcash-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -224,23 +224,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-akula-${VERSION}-aarch64-linux-gnu.tar.gz
-akula-${VERSION}-arm-linux-gnueabihf.tar.gz
-akula-${VERSION}-i686-pc-linux-gnu.tar.gz
-akula-${VERSION}-x86_64-linux-gnu.tar.gz
-akula-${VERSION}-osx64.tar.gz
-akula-${VERSION}-osx.dmg
-akula-${VERSION}.tar.gz
-akula-${VERSION}-win32-setup.exe
-akula-${VERSION}-win32.zip
-akula-${VERSION}-win64-setup.exe
-akula-${VERSION}-win64.zip
+zixcash-${VERSION}-aarch64-linux-gnu.tar.gz
+zixcash-${VERSION}-arm-linux-gnueabihf.tar.gz
+zixcash-${VERSION}-i686-pc-linux-gnu.tar.gz
+zixcash-${VERSION}-x86_64-linux-gnu.tar.gz
+zixcash-${VERSION}-osx64.tar.gz
+zixcash-${VERSION}-osx.dmg
+zixcash-${VERSION}.tar.gz
+zixcash-${VERSION}-win32-setup.exe
+zixcash-${VERSION}-win32.zip
+zixcash-${VERSION}-win64-setup.exe
+zixcash-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the http://bit.akulas/ server*.
+space *do not upload these to the http://bit.zixcashs/ server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -256,10 +256,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/akula, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/zixcash, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/AKL-Project/AKL/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/ZIX-Project/ZIX/releases/new) with a link to the archived release notes.
 
   - Celebrate

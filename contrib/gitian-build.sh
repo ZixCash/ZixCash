@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/jembem/akula
+url=https://github.com/jembem/zixcash
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the akula, gitian-builder, gitian.sigs, and akula-detached-sigs.
+Run this script from the directory containing the zixcash, gitian-builder, gitian.sigs, and zixcash-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/jembem/akula
+-u|--url	Specify the URL of the repository. Default is https://github.com/jembem/zixcash
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -232,8 +232,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/jembem/akula.SIGS.git
-    git clone https://github.com/AKL-DETACHED.SIGS.git
+    git clone https://github.com/jembem/zixcash.SIGS.git
+    git clone https://github.com/ZIX-DETACHED.SIGS.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -247,7 +247,7 @@ then
 fi
 
 # Set up build
-pushd ./akula
+pushd ./zixcash
 git fetch
 git checkout ${COMMIT}
 popd
@@ -256,7 +256,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./akula-binaries/${VERSION}
+	mkdir -p ./zixcash-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -266,7 +266,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../akula/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../zixcash/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -274,9 +274,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit akula=${COMMIT} --url akula=${url} ../akula/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/akula-*.tar.gz build/out/src/akula-*.tar.gz ../akula-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zixcash=${COMMIT} --url zixcash=${url} ../zixcash/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/zixcash-*.tar.gz build/out/src/zixcash-*.tar.gz ../zixcash-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,10 +284,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit akula=${COMMIT} --url akula=${url} ../akula/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/akula-*-win-unsigned.tar.gz inputs/akula-win-unsigned.tar.gz
-	    mv build/out/akula-*.zip build/out/akula-*.exe ../akula-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zixcash=${COMMIT} --url zixcash=${url} ../zixcash/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/zixcash-*-win-unsigned.tar.gz inputs/zixcash-win-unsigned.tar.gz
+	    mv build/out/zixcash-*.zip build/out/zixcash-*.exe ../zixcash-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,10 +295,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit akula=${COMMIT} --url akula=${url} ../akula/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/akula-*-osx-unsigned.tar.gz inputs/akula-osx-unsigned.tar.gz
-	    mv build/out/akula-*.tar.gz build/out/akula-*.dmg ../akula-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zixcash=${COMMIT} --url zixcash=${url} ../zixcash/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/zixcash-*-osx-unsigned.tar.gz inputs/zixcash-osx-unsigned.tar.gz
+	    mv build/out/zixcash-*.tar.gz build/out/zixcash-*.dmg ../zixcash-binaries/${VERSION}
 	fi
 	popd
 
@@ -325,27 +325,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../akula/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../zixcash/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../akula/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../zixcash/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../akula/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../zixcash/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../akula/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../zixcash/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../akula/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../zixcash/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -360,10 +360,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../akula/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/akula-*win64-setup.exe ../akula-binaries/${VERSION}
-	    mv build/out/akula-*win32-setup.exe ../akula-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../zixcash/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/zixcash-*win64-setup.exe ../zixcash-binaries/${VERSION}
+	    mv build/out/zixcash-*win32-setup.exe ../zixcash-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,9 +371,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../akula/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../akula/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/akula-osx-signed.dmg ../akula-binaries/${VERSION}/akula-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../zixcash/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../zixcash/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/zixcash-osx-signed.dmg ../zixcash-binaries/${VERSION}/zixcash-${VERSION}-osx.dmg
 	fi
 	popd
 

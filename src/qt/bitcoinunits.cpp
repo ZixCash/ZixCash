@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2015-2017 The AKL developers
+// Copyright (c) 2015-2017 The ZIX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(AKL);
-    unitlist.append(mAKL);
-    unitlist.append(uAKL);
+    unitlist.append(ZIX);
+    unitlist.append(mZIX);
+    unitlist.append(uZIX);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case AKL:
-    case mAKL:
-    case uAKL:
+    case ZIX:
+    case mZIX:
+    case uZIX:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case AKL:
-        return QString("akula");
-    case mAKL:
-        return QString("makula");
-    case uAKL:
-        return QString::fromUtf8("uakula");
+    case ZIX:
+        return QString("zixcash");
+    case mZIX:
+        return QString("mzixcash");
+    case uZIX:
+        return QString::fromUtf8("uzixcash");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case AKL:
-            return QString("AKL");
-        case mAKL:
-            return QString("mAKL");
-        case uAKL:
-            return QString::fromUtf8("μAKL");
+        case ZIX:
+            return QString("ZIX");
+        case mZIX:
+            return QString("mZIX");
+        case uZIX:
+            return QString::fromUtf8("μZIX");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case AKL:
-            return QString("tAKL");
-        case mAKL:
-            return QString("mtAKL");
-        case uAKL:
-            return QString::fromUtf8("μtAKL");
+        case ZIX:
+            return QString("tZIX");
+        case mZIX:
+            return QString("mtZIX");
+        case uZIX:
+            return QString::fromUtf8("μtZIX");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case AKL:
-            return QString("AKL");
-        case mAKL:
-            return QString("Milli-AKL (1 / 1" THIN_SP_UTF8 "000)");
-        case uAKL:
-            return QString("Micro-AKL (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case ZIX:
+            return QString("ZIX");
+        case mZIX:
+            return QString("Milli-ZIX (1 / 1" THIN_SP_UTF8 "000)");
+        case uZIX:
+            return QString("Micro-ZIX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case AKL:
-            return QString("TestAKLs");
-        case mAKL:
-            return QString("Milli-TestAKL (1 / 1" THIN_SP_UTF8 "000)");
-        case uAKL:
-            return QString("Micro-TestAKL (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case ZIX:
+            return QString("TestZIXs");
+        case mZIX:
+            return QString("Milli-TestZIX (1 / 1" THIN_SP_UTF8 "000)");
+        case uZIX:
+            return QString("Micro-TestZIX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case AKL:
+    case ZIX:
         return 100000000;
-    case mAKL:
+    case mZIX:
         return 100000;
-    case uAKL:
+    case uZIX:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case AKL:
+    case ZIX:
         return 8;
-    case mAKL:
+    case mZIX:
         return 5;
-    case uAKL:
+    case uZIX:
         return 2;
     default:
         return 0;

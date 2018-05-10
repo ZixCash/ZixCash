@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/zixcash_bg.qm</file>
+        <file alias="de">locale/zixcash_de.qm</file>
+        <file alias="en">locale/zixcash_en.qm</file>
+        <file alias="es">locale/zixcash_es.qm</file>
+        <file alias="fi">locale/zixcash_fi.qm</file>
+        <file alias="fr">locale/zixcash_fr.qm</file>
+        <file alias="it">locale/zixcash_it.qm</file>
+        <file alias="ja">locale/zixcash_ja.qm</file>
+        <file alias="pl">locale/zixcash_pl.qm</file>
+        <file alias="pt">locale/zixcash_pt.qm</file>
+        <file alias="ru">locale/zixcash_ru.qm</file>
+        <file alias="sk">locale/zixcash_sk.qm</file>
+        <file alias="sv">locale/zixcash_sv.qm</file>
+        <file alias="vi">locale/zixcash_vi.qm</file>
+        <file alias="zh_CN">locale/zixcash_zh_CN.qm</file>
+        <file alias="zh_TW">locale/zixcash_zh_TW.qm</file>
+    </qresource>
+</RCC>

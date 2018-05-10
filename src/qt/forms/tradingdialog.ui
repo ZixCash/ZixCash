@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AKLSupply">
+    <widget class="QLabel" name="ZIXSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="AKLDemand">
+    <widget class="QLabel" name="ZIXDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyAKL">
+    <widget class="QPushButton" name="BuyZIX">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,7 +442,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy AKL</string>
+      <string>Buy ZIX</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -508,7 +508,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>AKL</string>
+      <string>ZIX</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1700,10 +1700,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>AKL</string>
+      <string>ZIX</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputAKL">
+    <widget class="QLineEdit" name="UnitsInputZIX">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1737,7 +1737,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellAKLBTN">
+    <widget class="QPushButton" name="SellZIXBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1747,7 +1747,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell AKL</string>
+      <string>Sell ZIX</string>
      </property>
     </widget>
     <widget class="QWidget" name="layoutWidget3">
@@ -1769,12 +1769,12 @@
          </font>
         </property>
         <property name="text">
-         <string>AKL Available:</string>
+         <string>ZIX Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="AKLAvailableLabel">
+       <widget class="QLabel" name="ZIXAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2205,7 +2205,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelAKL">
+       <widget class="QLabel" name="labelZIX">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2213,7 +2213,7 @@
          </font>
         </property>
         <property name="text">
-         <string>AKL</string>
+         <string>ZIX</string>
         </property>
        </widget>
       </item>
@@ -2725,7 +2725,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AKLBalanceLabel">
+    <widget class="QLabel" name="ZIXBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2754,7 +2754,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AKL Balance:</string>
+      <string>ZIX Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2776,7 +2776,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AKLAvailableLabel_2">
+    <widget class="QLabel" name="ZIXAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2805,7 +2805,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AKL Available:</string>
+      <string>ZIX Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2824,10 +2824,10 @@
       </font>
      </property>
      <property name="text">
-      <string>AKL Pending:</string>
+      <string>ZIX Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AKLPendingLabel">
+    <widget class="QLabel" name="ZIXPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2920,7 +2920,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex AKL Deposit Address:</string>
+      <string>Bittrex ZIX Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2933,10 +2933,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate AKL Deposit Address</string>
+      <string>Generate ZIX Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../akula.qrc">
+      <iconset resource="../zixcash.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3147,7 +3147,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertAKL">
+     <widget class="QPushButton" name="btnConvertZIX">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3198,7 +3198,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../akula.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../zixcash.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3245,7 +3245,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../akula.qrc">
+      <iconset resource="../zixcash.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3400,7 +3400,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../akula.qrc"/>
+  <include location="../zixcash.qrc"/>
  </resources>
  <connections/>
 </ui>

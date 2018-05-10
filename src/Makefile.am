@@ -64,15 +64,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += akulad
+  bin_PROGRAMS += zixcashd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += akula-cli akula-tx
+  bin_PROGRAMS += zixcash-cli zixcash-tx
 endif
 
 .PHONY: FORCE
-# akula core #
+# zixcash core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -180,7 +180,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between akulad and akula-qt
+# server: shared between zixcashd and zixcash-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(BOOST_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -224,7 +224,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between akulad and akula-qt, but only linked
+# wallet: shared between zixcashd and zixcash-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -295,7 +295,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between akulad, and akula-qt and non-server tools
+# common: shared between zixcashd, and zixcash-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -351,7 +351,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between akula-cli and akula-qt
+# cli: shared between zixcash-cli and zixcash-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -361,7 +361,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-akulad_LDADD = \
+zixcashd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -372,40 +372,40 @@ akulad_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-akulad_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+zixcashd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-akulad_LDADD += libbitcoin_wallet.a
+zixcashd_LDADD += libbitcoin_wallet.a
 endif
-akulad_SOURCES = akulad.cpp
+zixcashd_SOURCES = zixcashd.cpp
 #
 
 if TARGET_WINDOWS
-akulad_SOURCES += akulad-res.rc
+zixcashd_SOURCES += zixcashd-res.rc
 endif
 
-akulad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-akulad_CPPFLAGS = $(BITCOIN_INCLUDES)
-akulad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+zixcashd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+zixcashd_CPPFLAGS = $(BITCOIN_INCLUDES)
+zixcashd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# akula-cli binary #
-akula_cli_LDADD = \
+# zixcash-cli binary #
+zixcash_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-akula_cli_SOURCES = \
-  akula-cli.cpp
+zixcash_cli_SOURCES = \
+  zixcash-cli.cpp
 
-akula_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+zixcash_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# akula-tx binary #
-akula_tx_LDADD = \
+# zixcash-tx binary #
+zixcash_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -414,15 +414,15 @@ akula_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-akula_tx_SOURCES = akula-tx.cpp
-akula_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+zixcash_tx_SOURCES = zixcash-tx.cpp
+zixcash_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-akula_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+zixcash_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-akula_cli_SOURCES += akula-cli-res.rc
+zixcash_cli_SOURCES += zixcash-cli-res.rc
 endif
-akula_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+zixcash_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

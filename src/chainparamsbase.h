@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between akula-cli and akulad)
- * of a given instance of the AKL system.
+ * CBaseChainParams defines the base parameters (shared between zixcash-cli and zixcashd)
+ * of a given instance of the ZIX system.
  */
 class CBaseChainParams
 {

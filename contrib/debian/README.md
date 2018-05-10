@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package akulad/akula-qt
-for Debian-based Linux systems. If you compile akulad/akula-qt yourself, there are some useful files here.
+This directory contains files used to package zixcashd/zixcash-qt
+for Debian-based Linux systems. If you compile zixcashd/zixcash-qt yourself, there are some useful files here.
 
-## akula: URI support ##
+## zixcash: URI support ##
 
 
-akula-qt.desktop  (Gnome / Open Desktop)
+zixcash-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install akula-qt.desktop
+	sudo desktop-file-install zixcash-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your akulaqt binary to `/usr/bin`
-and the `../../share/pixmaps/akula128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your zixcashqt binary to `/usr/bin`
+and the `../../share/pixmaps/zixcash128.png` to `/usr/share/pixmaps`
 
-akula-qt.protocol (KDE)
+zixcash-qt.protocol (KDE)
 

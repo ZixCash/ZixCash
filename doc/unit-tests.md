@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the akulad tests manually, launch src/test/test_akula .
+To run the zixcashd tests manually, launch src/test/test_zixcash .
 
-To add more akulad tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more zixcashd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the akula-qt tests manually, launch src/qt/test/akula-qt_test
+To run the zixcash-qt tests manually, launch src/qt/test/zixcash-qt_test
 
-To add more akula-qt tests, add them to the `src/qt/test/` directory and
+To add more zixcash-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

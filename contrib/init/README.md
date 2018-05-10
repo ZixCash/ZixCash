@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: akulad.service
-Upstart: akulad.conf
-OpenRC:  akulad.openrc
-         akulad.openrcconf
-CentOS:  akulad.init
+SystemD: zixcashd.service
+Upstart: zixcashd.conf
+OpenRC:  zixcashd.openrc
+         zixcashd.openrcconf
+CentOS:  zixcashd.init
 
 have been made available to assist packagers in creating node packages here.
 

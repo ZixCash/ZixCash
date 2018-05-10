@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both akulad and akula-qt, to make it harder for attackers to
+ * for both zixcashd and zixcash-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("AKL Core");
+const std::string CLIENT_NAME("ZIX Core");
 
 /**
  * Client version number

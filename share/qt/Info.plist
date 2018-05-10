@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>2.0.0, Copyright © 2009-2017 The Bitcoin Core developers, 2014-2017 The Dash and PIVX Core Developers, 2017-2017 The AKL Core developers</string>
+  <string>2.0.0, Copyright © 2009-2017 The Bitcoin Core developers, 2014-2017 The Dash and PIVX Core Developers, 2017-2017 The ZIX Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>2.0.0</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>AKL-Qt</string>
+  <string>ZIX-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.akula.AKL-Qt</string>
+  <string>io.zixcash.ZIX-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.akula.AKLPayment</string>
+      <string>io.zixcash.ZIXPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>akula</string>
+        <string>zixcash</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.akula.paymentrequest</string>
+      <string>io.zixcash.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>AKL payment request</string>
+      <string>ZIX payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-akula-payment-request</string>
+        <string>application/x-zixcash-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>akulapaymentrequest</string>
+          <string>zixcashpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.akula.paymentrequest</string>
+        <string>io.zixcash.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

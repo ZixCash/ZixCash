@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2015-2017 The AKL developers
+// Copyright (c) 2015-2017 The ZIX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -220,10 +220,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop AKL server.");
+            "\nStop ZIX server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "AKL server stopping";
+    return "ZIX server stopping";
 }
 
 
@@ -300,16 +300,16 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* AKL features */
-        {"akula", "masternode", &masternode, true, true, false},
-        {"akula", "masternodelist", &masternodelist, true, true, false},
-        {"akula", "mnbudget", &mnbudget, true, true, false},
-        {"akula", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
-        {"akula", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"akula", "mnsync", &mnsync, true, true, false},
-        {"akula", "spork", &spork, true, true, false},
+        /* ZIX features */
+        {"zixcash", "masternode", &masternode, true, true, false},
+        {"zixcash", "masternodelist", &masternodelist, true, true, false},
+        {"zixcash", "mnbudget", &mnbudget, true, true, false},
+        {"zixcash", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
+        {"zixcash", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"zixcash", "mnsync", &mnsync, true, true, false},
+        {"zixcash", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
-        {"akula", "Darksend", &Darksend, false, false, true}, /* not threadSafe because of SendMoney */
+        {"zixcash", "Darksend", &Darksend, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -575,16 +575,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use akulad, or the -server option to akula-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use zixcashd, or the -server option to zixcash-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=akularpc\n"
+                                               "rpcuser=zixcashrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"AKL Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"ZIX Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1024,7 +1024,7 @@ json_spirit::Value CRPCTable::execute(const std::string& strMethod, const json_s
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> akula-cli " + methodname + " " + args + "\n";
+    return "> zixcash-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
