@@ -109,7 +109,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 2 * 60; // ZIX: 1 day
         nTargetSpacing = 2 * 60;  // ZIX: 1 minute
-        nLastPOWBlock = 4000;
+        nLastPOWBlock = 10000;
         nMaturity = 7;
         nMasternodeCountDrift = 20;
 		nMasternodeColleteralLimxDev = 10000; //Params().MasternodeColleteralLimxDev()
@@ -143,8 +143,9 @@ public:
 		// vSeeds.push_back(CDNSSeedData("54.38.131.143", "54.38.131.143"));
 		// vSeeds.push_back(CDNSSeedData("54.38.131.144", "54.38.131.144"));
 
-      vSeeds.push_back(CDNSSeedData("Seednode1", "207.148.28.107"));
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
+      vSeeds.push_back(CDNSSeedData("Seednode1", "149.28.138.173"));
+      vSeeds.push_back(CDNSSeedData("Seednode1", "149.28.29.184"));
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 81);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
